@@ -83,6 +83,8 @@
   home = {
     packages = with pkgs; [
       pinentry-qt
+
+      kdePackages.kleopatra
     ];
   };
 }
