@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
   home = {
@@ -40,12 +40,26 @@
 
   services = {
     # ~/Code/github/Dietr1ch/home-manager/modules/services/mpd.nix
+    # ~/Code/github/Dietr1ch/nixpkgs/pkgs/servers/mpd/default.nix
     mpd = {
       enable = true;
 
       network = {
         listenAddress = "any";
       };
+
+      # https://github.com/MusicPlayerDaemon/MPD/tree/master/doc/mpdconf.example
+      # https://wiki.archlinux.org/title/Music_Player_Daemon#Audio_configuration
+      extraConfig = ''
+        # extraConfig from ~/Code/github/Dietr1ch/nixland/music/mpd.nix
+        audio_output {
+          type  "pipewire"
+          name  "PipeWire Sound Server"
+        }
+
+        zeroconf_enabled  "yes"
+        zeroconf_name			"Music Player ${config.home.username}@%h"
+      '';
     };  # ..services.mpd
 
     # ~/Code/github/Dietr1ch/home-manager/modules/services/mpdris2.nix
