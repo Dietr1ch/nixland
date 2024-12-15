@@ -1,18 +1,19 @@
 { pkgs, ... }:
 
+# https://wiki.nixos.org/wiki/RetroArch
 {
   home = {
     packages = with pkgs; [
-      # Emulators
-      dolphinEmu
+      emulationstation-de
 
-      # Retro Arch
       retroarch
+      retroarch-joypad-autoconfig
+
+      libretro.beetle-gba
+      libretro.beetle-psx-hw
       libretro.desmume
       libretro.dolphin
-      libretro.beetle-psx-hw
-      libretro.beetle-snes
-      libretro.beetle-gba
+      libretro.snes9x
     ];
   };
 }
