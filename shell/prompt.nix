@@ -86,6 +86,8 @@
           # "$env_var"
 
           "$character"
+
+          "$line_break"
         ];
       };
     };  # ..programs.starship
