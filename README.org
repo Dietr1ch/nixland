@@ -1,0 +1,101 @@
+#+title: Nixland
+
+* About
+This is my personal userland configuration built with [[https://github.com/nix-community/home-manager/][home-manager]] and [[https://nixos.org][nix]]. I
+maintain this publicly for myself as it helps keeping things is sync and setting
+up work machines.
+
+* Setup
+** ~flake.nix~
+#+begin_src nix
+  {
+    description = "My home-manager configuration";
+
+    inputs = {
+      nixpkgs = {
+        url = "github:NixOS/nixpkgs/nixos-unstable";
+      };
+      home-manager = {
+        url = "github:nix-community/home-manager/master";
+        inputs.nixpkgs.follows = "nixpkgs";
+      };
+
+      nixland = {
+        url = "github:Dietr1ch/nixland";
+        inputs = {
+          "nixpkgs".follows = "nixpkgs";
+          "home-manager".follows = "home-manager";
+        };
+      };
+    };
+
+    outputs = { nixpkgs, home-manager, nixland, ... }:
+      let
+        system = "x86_64-linux";
+        pkgs = nixpkgs.legacyPackages.${system};
+      in {
+        homeConfigurations = {
+          "dietr1ch" = home-manager.lib.homeManagerConfiguration {
+            inherit pkgs;
+
+            modules = [
+              # Nixland (https://github.com/Dietr1ch/nixland/)
+              nixland.nixosModules.core  # https://github.com/Dietr1ch/nixland/tree/master/core/default.nix
+              nixland.nixosModules.desktop  # https://github.com/Dietr1ch/nixland/tree/master/desktop/default.nix
+              nixland.nixosModules.gaming  # https://github.com/Dietr1ch/nixland/tree/master/gaming/default.nix
+              nixland.nixosModules.gaming-emulators  # https://github.com/Dietr1ch/nixland/tree/master/gaming/emulators.nix
+              # nixland.nixosModules.gaming-wine  # https://github.com/Dietr1ch/nixland/tree/master/gaming/wine.nix
+              nixland.nixosModules.music  # https://github.com/Dietr1ch/nixland/tree/master/music/default.nix
+              nixland.nixosModules.networking  # https://github.com/Dietr1ch/nixland/tree/master/networking/default.nix
+              nixland.nixosModules.programming  # https://github.com/Dietr1ch/nixland/tree/master/programming/default.nix
+              nixland.nixosModules.shell  # https://github.com/Dietr1ch/nixland/tree/master/shell/default.nix
+
+              ./home.nix
+            ];
+          };
+        };
+      };
+  }
+#+end_src
+
+** ~home.nix~
+#+begin_src nix
+  { pkgs, lib, ... }:
+
+  {
+    # ./flake.nix
+    imports = [
+      # ./home/accounts.nix
+      # ./home/core.nix
+      # ./home/desktop.nix
+      # ...
+    ];
+
+    nixpkgs = {
+      config = {
+        allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+          "discord"
+          "steam"
+          "steamcmd"
+          "steam-unwrapped"
+          "steam-original"
+          "steam-run"
+        ];
+      };
+    };
+
+    home = {
+      username = "dietr1ch";
+      homeDirectory = "/home/dietr1ch";
+
+      # This value determines the Home Manager release that your configuration is
+      # compatible with. This helps avoid breakage when a new Home Manager release
+      # introduces backwards incompatible changes.
+      #
+      # You should not change this value, even if you update Home Manager. If you do
+      # want to update the value, then make sure to first check the Home Manager
+      # release notes.
+      stateVersion = "24.11"; # Please read the comment before changing.
+    };
+  }
+#+end_src
