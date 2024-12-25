@@ -17,17 +17,24 @@
             "fish"
           ];
 
+          # https://docs.helix-editor.com/editor.html#editorlsp-section
           lsp = {
+            enable = true;
             display-messages = true;
+            display-inlay-hints = true;
           };
 
           true-color = true;
           mouse = true;
 
+          color-modes = true;
+
+          # https://docs.helix-editor.com/editor.html#editorfile-picker-section
           file-picker = {
             hidden = false;
           };
 
+          # https://docs.helix-editor.com/editor.html#editorgutters-section
           gutters = [
             "diagnostics"
             # "spacer"
@@ -37,17 +44,26 @@
           ];
 
           line-number = "relative";
+          # https://docs.helix-editor.com/editor.html#editorcursor-shape-section
           cursor-shape = {
             insert = "bar";
             normal = "block";
             select = "underline";
           };
+          # https://docs.helix-editor.com/editor.html#editorindent-guides-section
           indent-guides = {
             render = true;
             character = "▏";
             # character = "⸽";
             skip-levels = 1;
           };
+
+          # https://docs.helix-editor.com/editor.html#editorsmart-tab-section
+          smart-tab = {
+            enable = true;
+          };
+
+          # https://docs.helix-editor.com/editor.html#editorwhitespace-section
           whitespace = {
             render = {
               tab = "all";
