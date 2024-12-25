@@ -165,6 +165,9 @@
       inotify-tools
       fswatch
 
+      # Text
+      sd  # sed replacement
+
       # System
       htop
       bottom
@@ -176,6 +179,7 @@
       # Network
       wol
       nmap
+      gping
       hping
       nethogs
       trippy
@@ -183,7 +187,9 @@
       aria2
       dig
       dogdns
+      # HTTP
       httpie
+      xh
 
       hyperfine
 
