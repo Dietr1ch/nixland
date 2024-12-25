@@ -49,9 +49,11 @@
         };
 
 
+        # https://starship.rs/config/#prompt
+        #
         # 2020-11-03 Tue 🕙 22:21:33  ⏳23s99ms
         # /a/b/c/one/two/three/four  master [✘!] ❯
-        # echo "aoeu"
+        # echo "aoeu"                                     ⏳23s99ms
         format = builtins.concatStringsSep "" [
           "$jobs"
           "$battery"
@@ -88,6 +90,10 @@
           "$character"
 
           "$line_break"
+          "\n"
+        ];
+        right_format = builtins.concatStringsSep "" [
+          "$cmd_duration"
         ];
       };
     };  # ..programs.starship
