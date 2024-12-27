@@ -154,6 +154,7 @@
                               | cut -d ":" -f 1)
 
             if test -n "$package"
+              echo "Loading package '$package'"
               nix-shell \
                 -p $package \
                 && return 0
