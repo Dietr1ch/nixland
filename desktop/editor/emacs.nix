@@ -43,12 +43,18 @@
     };
   };
 
+  # ~/.config/systemd/user/emacs.service
   systemd = {
     user = {
       services = {
         emacs = {
+          # NOTE: I think this fixes startup when the graphical session fails
           Unit = {
             After = [ "graphical-session-pre.target" ];
+          };
+          Service = {
+            # Allow long startups due to recompilation.
+            TimeoutStartSec = 60;
           };
         };
       };
