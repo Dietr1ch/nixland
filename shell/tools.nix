@@ -177,7 +177,8 @@
       du-dust
       ncdu
       # Network
-      wol
+      # TODO: Add `wol`
+      # wol
       nmap
       gping
       hping

@@ -3,7 +3,8 @@
 {
   home = {
     packages = with pkgs; [
-      flacon
+      # TODO: Add `flacon`
+      # flacon
 
       ffmpeg
       shntool
