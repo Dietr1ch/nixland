@@ -7,7 +7,9 @@
       nixd
       # nil
 
-      nixpkgs-fmt
+      # NOTE nixfmt still points to nixfmt-classic
+      nixfmt-rfc-style
+
       nixpkgs-review
     ];  # ..home.packages
   };  # ..home
