@@ -8,6 +8,7 @@
       # nil
 
       nixpkgs-fmt
+      nixpkgs-review
     ];  # ..home.packages
   };  # ..home
 }
