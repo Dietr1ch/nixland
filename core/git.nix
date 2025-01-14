@@ -44,8 +44,8 @@
         "exec" = "!exec ";
 
         "h" = "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short";
-        "ll" = "log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%<(12)%ar)%C(reset)  %s%C(dim white) - %an  %C(auto)%d%C(reset)'";
-        "lla" = "log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%<(12)%ar)%C(reset)  %s%C(dim white) - %an  %C(auto)%d%C(reset)' --all";
+        "ll" = "log --graph --abbrev-commit --decorate --max-count 200";
+        "lla" = "log --graph --abbrev-commit --decorate --max-count 200 --all";
 
         "publish" = "!sh -c 'git push -u origin $(git branch-name)'";
         "unpublish" = "!sh -c 'git push -u origin :$(git branch-name)'";
@@ -75,6 +75,10 @@
           "git@gist.github.com:" = {
             insteadOf = "gist:";
           };
+        };
+        pretty = {
+          "oneliner" =
+            "format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%<(12)%ar)%C(reset)  %s%C(dim white) - %an  %C(auto)%d%C(reset)'";
         };
       };
     };
