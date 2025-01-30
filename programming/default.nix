@@ -12,7 +12,7 @@
 
   home = {
     packages = with pkgs; [
-      loc
+      tokei
     ];  # ..home.packages
 
     file = {
