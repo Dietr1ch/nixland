@@ -6,13 +6,18 @@
     ssh = {
       enable = true;
 
-      compression = true;
+      # Settings
+      # --------
+      # ~/.ssh/config
+
+      compression = false;
       controlMaster = "auto";
       controlPersist = "3m";
       controlPath = "$\{XDG_RUNTIME_DIR\}/ssh-socket-%l-%r@%h:%p";
       serverAliveInterval = 5;  # 5s
       serverAliveCountMax = 3;  # Up to 3 in-flight heartbeats
 
+      # ~/.config/ssh/known_hosts
       userKnownHostsFile = "$\{XDG_CONFIG_HOME\}/ssh/known_hosts";
 
       hashKnownHosts = true;
