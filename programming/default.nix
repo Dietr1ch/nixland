@@ -14,6 +14,7 @@
     ./web.nix
 
     ./json.nix
+    ./xml.nix
   ];
 
   home = {
