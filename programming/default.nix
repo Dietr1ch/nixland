@@ -2,8 +2,12 @@
 
 {
   imports = [
+    ./python.nix
     ./rust.nix
+
     ./nix.nix
+
+    ./build.nix
 
     ./web.nix
 

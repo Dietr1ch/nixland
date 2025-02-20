@@ -1,7 +1,13 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   home = {
+    packages = with pkgs; [
+      cargo
+
+      bacon
+    ];  # ..home.packages
+
     file = {
       ".cargo/config.toml" = {
         text = ''
