@@ -4,7 +4,7 @@
   home = {
     packages = with pkgs; [
       libreoffice-fresh
-      okular
+      kdePackages.okular
 
       pandoc
     ];

@@ -4,7 +4,7 @@
   home = {
     packages = with pkgs; [
       vokoscreen
-      spectacle
+      kdePackages.spectacle
     ];
   };
 }

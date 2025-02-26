@@ -4,7 +4,7 @@
   home = {
     packages = with pkgs; [
       # Extract
-      ark
+      kdePackages.ark
       brotli
       lbzip2
       xz
