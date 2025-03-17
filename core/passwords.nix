@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   programs = {
@@ -9,5 +9,11 @@
       settings  = {
       };
     };
+  };
+
+  home = {
+    packages = with pkgs; [
+      keepassxc
+    ];
   };
 }
