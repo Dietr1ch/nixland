@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   programs = {
@@ -30,5 +30,11 @@
         PubkeyAuthentication yes
       '';
     };
+  };
+
+  home = {
+    packages = with pkgs; [
+      wol
+    ];
   };
 }
