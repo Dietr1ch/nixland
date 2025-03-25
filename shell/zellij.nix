@@ -26,7 +26,8 @@ in
       settings = {
         # https://zellij.dev/documentation/configuration
 
-        default_mode = default_mode;  # https://zellij.dev/documentation/options#default_mode
+        default_mode = default_mode; # https://zellij.dev/documentation/options#default_mode
+        show_startup_tips = false; # https://zellij.dev/documentation/options#show_startup_tips
 
         # https://zellij.dev/documentation/themes
         theme = "nord";  # https://zellij.dev/documentation/options#theme
