@@ -61,6 +61,10 @@
         background = "dark";
       };
 
+      lfs = {
+        enable = true;
+      };
+
       extraConfig = {
         init = {
           defaultBranch = "master";
