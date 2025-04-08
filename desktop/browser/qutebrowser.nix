@@ -5,6 +5,7 @@
     qutebrowser = {
       enable = true;
 
+      # Generates ~/.config/qutebrowser/config.py
       settings = {
         completion = {
           shrink = true;
@@ -38,7 +39,6 @@
         };
       };
 
-      # Generates ~/.config/qutebrowser/config.py
       keyBindings = {
         normal = {
           "e" = "hint";
@@ -59,6 +59,9 @@
         "g" = "https://www.google.com/search?q={}";
         "w" = "https://en.wikipedia.org/wiki/Special:Search?search={}&go=Go&ns0=1";
         "aw" = "https://wiki.archlinux.org/?search={}";
+
+        "hmopt" = "https://home-manager-options.extranix.com/?release=master&query={}";
+        "nxopt" = "https://search.nixos.org/options?channel=unstable&type=packages&query={}";
 
         "nw" = "https://wiki.nixos.org/index.php?search={}";
       };
