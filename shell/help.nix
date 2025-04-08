@@ -2,7 +2,7 @@
 
 {
   programs = {
-    command-not-found.enable = true;
+    nix-index.enable = true;
 
     man = {
       # ~/Code/github/Dietr1ch/home-manager/modules/programs/man.nix
