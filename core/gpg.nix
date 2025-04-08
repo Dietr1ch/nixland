@@ -31,7 +31,6 @@
         keyserver-options = "no-honor-keyserver-url";
         no-autostart = true;
 
-
         personal-cipher-preferences = "AES256";
         personal-digest-preferences = "SHA512 SHA256";
 
@@ -47,20 +46,20 @@
         charset = "utf-8";
 
         # Display
-        no-comments = true;  # No comments in messages
-        no-emit-version = true;  # No version in output
-        no-greeting = true;  # Disable banner
-        keyid-format = "0xlong";  # Long key id format
-        list-options = "show-uid-validity";  # Display UID validity
-        verify-options = "show-uid-validity";  # Display UID validity
+        no-comments = true; # No comments in messages
+        no-emit-version = true; # No version in output
+        no-greeting = true; # Disable banner
+        keyid-format = "0xlong"; # Long key id format
+        list-options = "show-uid-validity"; # Display UID validity
+        verify-options = "show-uid-validity"; # Display UID validity
         with-fingerprint = true; # Display all keys and their fingerprints
-        with-key-origin = true;  # Display key origins and updates
-        fixed-list-mode = true;  # Do not merge primary user ID and key in --with-colon listing mode and print unix timestamps
+        with-key-origin = true; # Display key origins and updates
+        fixed-list-mode = true; # Do not merge primary user ID and key in --with-colon listing mode and print unix timestamps
 
-        require-cross-certification = true;  # Cross-certify subkeys are present and valid
-        no-symkey-cache = true;   # Disable caching of passphrase for symmetrical ops
-        use-agent = true;  # Enable smartcard
-        throw-keyids = true;  # Disable recipient key ID in messages (breaks Mailvelope)
+        require-cross-certification = true; # Cross-certify subkeys are present and valid
+        no-symkey-cache = true; # Disable caching of passphrase for symmetrical ops
+        use-agent = true; # Enable smartcard
+        throw-keyids = true; # Disable recipient key ID in messages (breaks Mailvelope)
       };
     };
   };
@@ -77,8 +76,8 @@
       grabKeyboardAndMouse = true;
       enableSshSupport = true;
 
-      maxCacheTtl = 5 * 60;      #  5 minutes
-      maxCacheTtlSsh = 15 * 60;  # 15 minutes
+      maxCacheTtl = 5 * 60; # 5 minutes
+      maxCacheTtlSsh = 15 * 60; # 15 minutes
     };
   };
 

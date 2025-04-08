@@ -5,7 +5,7 @@
     chromium = {
       enable = true;
     };
-  };  # ..programs
+  }; # ..programs
 
   home = {
     file = {
@@ -28,8 +28,6 @@
       };
     };
 
-    packages = with pkgs; [
-      captive-browser
-    ];
+    packages = with pkgs; [ captive-browser ];
   };
 }

@@ -10,8 +10,6 @@
       "PAGER" = "less -RXF";
     };
 
-    packages = with pkgs; [
-      less
-    ];
+    packages = with pkgs; [ less ];
   };
 }

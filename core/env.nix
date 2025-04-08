@@ -24,10 +24,10 @@
           "strict_env" = true;
         };
       };
-    };  # ..programs.direnv
+    }; # ..programs.direnv
 
     mise = {
       enable = true;
-    };  # ..programs.mise
+    }; # ..programs.mise
   };
 }

@@ -86,13 +86,11 @@
             };
           };
         };
-      };  # ..programs.beets.settings
-    };  # ..programs.beets
-  };  # ..programs
+      }; # ..programs.beets.settings
+    }; # ..programs.beets
+  }; # ..programs
 
   home = {
-    packages = with pkgs; [
-      ffmpeg
-    ];
-  };  # ..home
+    packages = with pkgs; [ ffmpeg ];
+  }; # ..home
 }

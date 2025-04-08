@@ -2,9 +2,7 @@
 
 {
   home = {
-    packages = with pkgs; [
-      ghc
-    ];  # ..home.packages
-  };  # ..home
+    packages = with pkgs; [ ghc ];
+  }; # ..home
 
 }

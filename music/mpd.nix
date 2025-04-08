@@ -20,26 +20,77 @@
 
       bindings = [
         # https://gist.github.com/Soft/959188/1ffff2f3360b651c74bb9b7b5c6d854ab71b7d08
-        { key = "up"; command = "volume_up"; }
-        { key = "down"; command = "volume_down"; }
+        {
+          key = "up";
+          command = "volume_up";
+        }
+        {
+          key = "down";
+          command = "volume_down";
+        }
 
-        { key = "j"; command = "scroll_down"; }
-        { key = "k"; command = "scroll_up"; }
-        { key = "h"; command = "previous_column"; }
-        { key = "l"; command = "next_column"; }
+        {
+          key = "j";
+          command = "scroll_down";
+        }
+        {
+          key = "k";
+          command = "scroll_up";
+        }
+        {
+          key = "h";
+          command = "previous_column";
+        }
+        {
+          key = "l";
+          command = "next_column";
+        }
 
-        { key = "J"; command = [ "select_item" "scroll_down" ]; }
-        { key = "K"; command = [ "select_item" "scroll_up" ]; }
+        {
+          key = "J";
+          command = [
+            "select_item"
+            "scroll_down"
+          ];
+        }
+        {
+          key = "K";
+          command = [
+            "select_item"
+            "scroll_up"
+          ];
+        }
 
-        { key = "ctrl-u"; command = [ "page_up" ]; }
-        { key = "ctrl-d"; command = [ "page_down" ]; }
+        {
+          key = "ctrl-u";
+          command = [ "page_up" ];
+        }
+        {
+          key = "ctrl-d";
+          command = [ "page_down" ];
+        }
 
-        { key = "g"; command = [ "move_home" ]; }
-        { key = "G"; command = [ "move_end" ]; }
-        { key = "n"; command = [ "next_found_item" ]; }
-        { key = "N"; command = [ "previous_found_item" ]; }
+        {
+          key = "g";
+          command = [ "move_home" ];
+        }
+        {
+          key = "G";
+          command = [ "move_end" ];
+        }
+        {
+          key = "n";
+          command = [ "next_found_item" ];
+        }
+        {
+          key = "N";
+          command = [ "previous_found_item" ];
+        }
 
-        { key = "."; command = [ "show_lyrics" ]; }
+        {
+          key = ".";
+          command = [ "show_lyrics" ];
+        }
       ];
     };
   };
@@ -66,7 +117,7 @@
         zeroconf_enabled  "yes"
         zeroconf_name			"Music Player ${config.home.username}@%h"
       '';
-    };  # ..services.mpd
+    }; # ..services.mpd
 
     # ~/Code/github/Dietr1ch/home-manager/modules/services/mpdris2.nix
     mpdris2 = {
@@ -74,8 +125,8 @@
 
       multimediaKeys = true;
       notifications = true;
-    };  # ..services.mpdris2
-  };  # ..services
+    }; # ..services.mpdris2
+  }; # ..services
 
   systemd = {
     user = {

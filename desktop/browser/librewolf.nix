@@ -9,8 +9,6 @@
   # };  # ..programs
 
   home = {
-    packages = with pkgs; [
-      librewolf-wayland
-    ];  # ..home.packages
-  };  # ..home
+    packages = with pkgs; [ librewolf-wayland ]; # ..home.packages
+  }; # ..home
 }

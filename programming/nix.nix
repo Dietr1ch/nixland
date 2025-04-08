@@ -11,6 +11,6 @@
       nixfmt-rfc-style
 
       nixpkgs-review
-    ];  # ..home.packages
-  };  # ..home
+    ]; # ..home.packages
+  }; # ..home
 }

@@ -1,13 +1,10 @@
 { pkgs, ... }:
 
 {
-  imports = [
-  ];
+  imports = [ ];
 
   home = {
-    packages = with pkgs; [
-      wireshark-qt
-    ];
+    packages = with pkgs; [ wireshark-qt ];
   };
 
   services = {

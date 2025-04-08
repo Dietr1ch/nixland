@@ -2,8 +2,6 @@
 
 {
   home = {
-    packages = with pkgs; [
-      pass
-    ];
+    packages = with pkgs; [ pass ];
   };
 }

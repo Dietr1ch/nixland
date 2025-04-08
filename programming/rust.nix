@@ -6,7 +6,7 @@
       cargo
 
       bacon
-    ];  # ..home.packages
+    ]; # ..home.packages
 
     file = {
       ".cargo/config.toml" = {
@@ -28,8 +28,8 @@
           [cargo-new]
           vcs = "git"              # VCS to use ('git', 'hg', 'pijul', 'fossil', 'none')
         '';
-      };  # ..home.file.".cargo/config.toml"
-    };  # ..home.file
-  };  # ..home
+      }; # ..home.file.".cargo/config.toml"
+    }; # ..home.file
+  }; # ..home
 
 }

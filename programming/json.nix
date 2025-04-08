@@ -8,8 +8,8 @@
 
       # LSP
       vscode-langservers-extracted
-    ];  # ..home.packages
-  };  # ..home
+    ]; # ..home.packages
+  }; # ..home
 
   programs = {
     jq = {

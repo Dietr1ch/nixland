@@ -6,10 +6,9 @@
       enable = true;
 
       package = pkgs.emacs30-pgtk;
-      extraPackages = epkgs: with epkgs; [
-      ];
-    };  # ..programs.emacs
-  };  # ..programs
+      extraPackages = epkgs: with epkgs; [ ];
+    }; # ..programs.emacs
+  }; # ..programs
 
   home = {
     packages = with pkgs; [
@@ -25,7 +24,7 @@
     sessionVariables = {
       LSP_USE_PLISTS = "true";
     };
-  };  # ..home
+  }; # ..home
 
   services = {
     emacs = {

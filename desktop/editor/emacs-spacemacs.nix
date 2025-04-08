@@ -1,9 +1,7 @@
 { pkgs, ... }:
 
 {
-  imports = [
-    ./emacs.nix
-  ];
+  imports = [ ./emacs.nix ];
 
   home = {
     file = {
@@ -14,11 +12,11 @@
       ".emacs.d" = {
         recursive = true;
         source = pkgs.fetchFromGitHub {
-           # https://github.com/plexus/chemacs2
-           owner = "plexus";
-           repo = "chemacs2";
-           rev = "c2d700b784c793cc82131ef86323801b8d6e67bb";
-           sha256 = "XsJ2hHoQGoDbM7J+VvO1u0+f+jJCQqcUqQjzvTlnnG0=";
+          # https://github.com/plexus/chemacs2
+          owner = "plexus";
+          repo = "chemacs2";
+          rev = "c2d700b784c793cc82131ef86323801b8d6e67bb";
+          sha256 = "XsJ2hHoQGoDbM7J+VvO1u0+f+jJCQqcUqQjzvTlnnG0=";
         };
       };
 
@@ -95,6 +93,6 @@
         };
       };
 
-    };  # ..home.file
-  };  # ..home
+    }; # ..home.file
+  }; # ..home
 }

@@ -13,9 +13,7 @@
 
         # https://docs.helix-editor.com/configuration.html#editor
         editor = {
-          shell = [
-            "fish"
-          ];
+          shell = [ "fish" ];
 
           # https://docs.helix-editor.com/editor.html#editorlsp-section
           lsp = {
@@ -83,6 +81,6 @@
         #   space.w = ":w";
         # };
       };
-    };  # ..programs.helix
-  };  # ..programs
+    }; # ..programs.helix
+  }; # ..programs
 }

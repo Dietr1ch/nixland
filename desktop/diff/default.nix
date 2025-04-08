@@ -1,9 +1,7 @@
 { pkgs, ... }:
 
 {
-  imports = [
-    ./meld.nix
-  ];
+  imports = [ ./meld.nix ];
 
   programs = {
     git = {
@@ -11,12 +9,10 @@
         enable = true;
         background = "dark";
       };
-    };  # ..programs.git
-  };  # ..programs
+    }; # ..programs.git
+  }; # ..programs
 
   home = {
-    packages = with pkgs; [
-      diffsitter
-    ];  # ..home.packages
-  };  # ..home
+    packages = with pkgs; [ diffsitter ];
+  }; # ..home
 }

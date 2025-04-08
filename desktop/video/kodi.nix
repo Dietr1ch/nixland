@@ -8,6 +8,6 @@
       enable = true;
 
       package = pkgs.kodi-wayland;
-    };  # ..programs.kodi
+    }; # ..programs.kodi
   };
 }

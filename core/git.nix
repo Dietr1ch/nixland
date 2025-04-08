@@ -11,11 +11,9 @@
         "!.ignore"
         "!.gitignore"
 
-
         # Temporary files
         "*~"
         "*.swp"
-
 
         # Outputs
         # Rust
@@ -90,9 +88,9 @@
 
   home = {
     packages = with pkgs; [
-      git-appraise   # https://github.com/google/git-appraise
-      git-bug        # https://github.com/git-bug/git-bug
-      git-workspace  # https://github.com/orf/git-workspace
+      git-appraise # https://github.com/google/git-appraise
+      git-bug # https://github.com/git-bug/git-bug
+      git-workspace # https://github.com/orf/git-workspace
       gitflow
       gitAndTools.delta
       gitAndTools.git-absorb

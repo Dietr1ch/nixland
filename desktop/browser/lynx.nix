@@ -2,8 +2,6 @@
 
 {
   home = {
-    packages = with pkgs; [
-      lynx
-    ];
+    packages = with pkgs; [ lynx ];
   };
 }

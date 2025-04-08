@@ -70,7 +70,7 @@
       # ];
       fileWidgetCommand = "fd --type 'f'";
       # fileWidgetOptions = [];
-    };  # ..programs.skim
+    }; # ..programs.skim
 
     fastfetch = {
       enable = true;
@@ -81,7 +81,7 @@
           separator = "";
           size.binaryPrefix = "si";
         };
-        # https://github.com/fastfetch-cli/fastfetch/blob/dev/presets/all.jsonc 
+        # https://github.com/fastfetch-cli/fastfetch/blob/dev/presets/all.jsonc
         modules = [
           "title"
           # "separator"
@@ -146,8 +146,8 @@
           }
         ];
       };
-    };  # ..programs.fastfetch
-  };  # ..programs
+    }; # ..programs.fastfetch
+  }; # ..programs
 
   home = {
     packages = with pkgs; [
@@ -166,7 +166,7 @@
       fswatch
 
       # Text
-      sd  # sed replacement
+      sd # sed replacement
 
       # System
       htop

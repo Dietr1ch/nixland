@@ -2,8 +2,6 @@
 
 {
   home = {
-    packages = with pkgs; [
-      revolt-desktop
-    ];
+    packages = with pkgs; [ revolt-desktop ];
   };
 }

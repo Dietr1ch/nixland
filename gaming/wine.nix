@@ -12,7 +12,7 @@
       # wineWowPackages.stable
       # wine-staging (version with experimental features)
       # wineWowPackages.staging
-      wineWowPackages.waylandFull  # (Unstable)
+      wineWowPackages.waylandFull # (Unstable)
     ];
   };
 }

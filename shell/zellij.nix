@@ -1,8 +1,8 @@
 { pkgs, ... }:
 
 let
-  default_mode = "normal";     # https://zellij.dev/documentation/options#default_mode
-  default_layout = "compact";  # https://zellij.dev/documentation/options#default_layout
+  default_mode = "normal"; # https://zellij.dev/documentation/options#default_mode
+  default_layout = "compact"; # https://zellij.dev/documentation/options#default_layout
 in
 {
   programs = {
@@ -28,10 +28,11 @@ in
 
         default_mode = default_mode; # https://zellij.dev/documentation/options#default_mode
         show_startup_tips = false; # https://zellij.dev/documentation/options#show_startup_tips
+        # show_release_notes = false; # https://zellij.dev/documentation/options#show_release_notes
 
         # https://zellij.dev/documentation/themes
-        theme = "nord";  # https://zellij.dev/documentation/options#theme
-        default_layout = default_layout;  # https://zellij.dev/documentation/options#default_layout
+        theme = "nord"; # https://zellij.dev/documentation/options#theme
+        default_layout = default_layout; # https://zellij.dev/documentation/options#default_layout
 
         copy_command = "wl-copy";
 
@@ -40,8 +41,7 @@ in
 
         scroll_buffer_size = 10000;
         scrollback_lines_to_serialize = 10000;
-      };  # ..programs.zellij.settings
-
+      }; # ..programs.zellij.settings
 
       # New settings from https://github.com/nix-community/home-manager/pull/6078
       # https://github.com/zellij-org/zellij/blob/main/zellij-utils/assets/config/default.kdl
@@ -339,15 +339,13 @@ in
             }
           }
         }
-      '';  # ..programs.zellij.extraConfig
+      ''; # ..programs.zellij.extraConfig
 
-    };  # ..programs.zellij
+    }; # ..programs.zellij
   };
 
   home = {
-    packages = with pkgs; [
-      wl-clipboard-rs
-    ];  # ..packages
+    packages = with pkgs; [ wl-clipboard-rs ]; # ..packages
 
     file = {
       # Extra plugins (https://github.com/zellij-org/awesome-zellij)
@@ -363,6 +361,6 @@ in
       #   url = "https://github.com/karimould/zellij-forgot/releases/download/0.4.0/zellij_forgot.wasm";
       #   sha256 = "sha256-WdPKHrCtmg0dv446f8KkHNnAk/GKXtufJfCZyLXf7cM=";
       # };
-    };  # ..home.file
-  };  # ..home
+    }; # ..home.file
+  }; # ..home
 }

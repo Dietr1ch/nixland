@@ -37,17 +37,16 @@
           format = " ⏳[$duration]($style)";
           show_milliseconds = true;
 
-          min_time = 500;  # 500ms
+          min_time = 500; # 500ms
           # Notifications
           show_notifications = true;
-          min_time_to_notify = 5000;  # 5s
+          min_time_to_notify = 5000; # 5s
         };
         time = {
           disabled = false;
           format = "[$time]($style)";
           time_format = "%F %a 🕙 %T ";
         };
-
 
         # https://starship.rs/config/#prompt
         #
@@ -96,6 +95,6 @@
         #   "$cmd_duration"
         # ];
       };
-    };  # ..programs.starship
-  };  # ..programs
+    }; # ..programs.starship
+  }; # ..programs
 }

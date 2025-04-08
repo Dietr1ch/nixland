@@ -11,8 +11,6 @@
       DICTIONARY = "en_GB";
     };
 
-    packages = with pkgs; [
-      hunspell
-    ];
+    packages = with pkgs; [ hunspell ];
   };
 }

@@ -10,13 +10,12 @@
 
       python312Packages.pandas
       python312Packages.pandas-stubs
-      python312Packages.xlrd  # Excel
+      python312Packages.xlrd # Excel
 
       python312Packages.polars
       python312Packages.altair
       python312Packages.vega
       # TODO Add python312Packages.vl-convert
-
 
       python312Packages.numpy
       python312Packages.scipy
@@ -27,8 +26,8 @@
       python312Packages.requests
 
       # Tools
-      ruff  # Lint, Formatter
-      pylyzer  # LSP
-    ];  # ..home.packages
-  };  # ..home
+      ruff # Lint, Formatter
+      pylyzer # LSP
+    ]; # ..home.packages
+  }; # ..home
 }

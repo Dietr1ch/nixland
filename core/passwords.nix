@@ -6,14 +6,11 @@
     password-store = {
       enable = true;
 
-      settings  = {
-      };
+      settings = { };
     };
   };
 
   home = {
-    packages = with pkgs; [
-      keepassxc
-    ];
+    packages = with pkgs; [ keepassxc ];
   };
 }

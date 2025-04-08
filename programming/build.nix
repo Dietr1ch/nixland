@@ -5,7 +5,7 @@
     packages = with pkgs; [
       gnumake
       just
-    ];  # ..home.packages
-  };  # ..home
+    ]; # ..home.packages
+  }; # ..home
 
 }

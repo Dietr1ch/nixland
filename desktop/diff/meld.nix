@@ -2,8 +2,6 @@
 
 {
   home = {
-    packages = with pkgs; [
-      meld
-    ];
+    packages = with pkgs; [ meld ];
   };
 }

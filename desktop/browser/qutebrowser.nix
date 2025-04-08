@@ -11,9 +11,7 @@
         };
         url = {
           default_page = "about:blank";
-          start_pages = [
-            "about:blank"
-          ];
+          start_pages = [ "about:blank" ];
         };
         hints = {
           # Dvorak
@@ -57,10 +55,11 @@
         };
       };
       searchEngines = {
-        "d"  = "https://duckduckgo.com/?q={}";
-        "g"  = "https://www.google.com/search?q={}";
-        "w"  = "https://en.wikipedia.org/wiki/Special:Search?search={}&go=Go&ns0=1";
+        "d" = "https://duckduckgo.com/?q={}";
+        "g" = "https://www.google.com/search?q={}";
+        "w" = "https://en.wikipedia.org/wiki/Special:Search?search={}&go=Go&ns0=1";
         "aw" = "https://wiki.archlinux.org/?search={}";
+
         "nw" = "https://wiki.nixos.org/index.php?search={}";
       };
       extraConfig = ''
@@ -68,7 +67,7 @@
         # See ~/.config/home-manager/home/browsers.nix
         # programs.qutebrowser.extraConfig:
       '';
-    };  # ..programs.qutebrowser
+    }; # ..programs.qutebrowser
 
     mpv = {
       enable = true;
@@ -79,6 +78,6 @@
 
         gpu-context = "wayland";
       };
-    };  # ..programs.mpv
-  };  # ..programs
+    }; # ..programs.mpv
+  }; # ..programs
 }

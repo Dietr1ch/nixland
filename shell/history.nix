@@ -8,13 +8,13 @@
       enable = true;
 
       settings = {
-      };  # ..programs.mcfly.settings
+      }; # ..programs.mcfly.settings
 
       keyScheme = "vim";
       fzf = {
         enable = true;
       };
       fuzzySearchFactor = 2;
-    };  # ..programs.mcfly
-  };  # ..programs
+    }; # ..programs.mcfly
+  }; # ..programs
 }

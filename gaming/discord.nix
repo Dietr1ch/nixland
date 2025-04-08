@@ -2,8 +2,6 @@
 
 {
   home = {
-    packages = with pkgs; [
-      discord
-    ];
+    packages = with pkgs; [ discord ];
   };
 }

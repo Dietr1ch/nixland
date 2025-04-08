@@ -20,13 +20,10 @@
           "Source Code Pro"
           "Hack"
         ];
-        emoji = [
-          "Noto Color"
-        ];
+        emoji = [ "Noto Color" ];
       };
     };
   };
-
 
   home = {
     packages = with pkgs; [
@@ -72,6 +69,6 @@
 
       emojione
       noto-fonts-emoji
-    ];  # ..home.packages
-  };  # ..home
+    ]; # ..home.packages
+  }; # ..home
 }

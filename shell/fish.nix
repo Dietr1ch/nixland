@@ -8,10 +8,8 @@
       # ~/Code/github/Dietr1ch/home-manager/modules/programs/fish.nix
       enable = true;
 
-      shellInit = ''
-      '';
-      loginShellInit = ''
-      '';
+      shellInit = '''';
+      loginShellInit = '''';
 
       # Themes:
       #   fish_config theme show
@@ -31,14 +29,14 @@
         ll = "eza --long --group-directories-first";
         la = "eza --all --group-directories-first";
         lla = "eza --long --all --group-directories-first";
-      };  # ..programs.fish.shellAliases
+      }; # ..programs.fish.shellAliases
 
       shellAbbrs = {
         cat = "bat -p";
         f = "fd --follow";
 
         # rsync
-        rs =  ''
+        rs = ''
           rsync \\
             --archive \\
             --recursive \\
@@ -46,7 +44,7 @@
             --progress \\
             --verbose \\
         '';
-        rss =  ''
+        rss = ''
           rsync \\
             --archive \\
             --recursive \\
@@ -134,10 +132,11 @@
         sc = "systemctl";
         scu = "systemctl  --user";
         sj = "journalctl";
-      };  # ..programs.fish.shellAbbrs
+      }; # ..programs.fish.shellAbbrs
 
       functions = {
-        "_dns_list" = "nmcli --terse --mode 'multiline' --get-values IP4.DNS device show $argv | gawk '-F:' '{print $2}'";
+        "_dns_list" =
+          "nmcli --terse --mode 'multiline' --get-values IP4.DNS device show $argv | gawk '-F:' '{print $2}'";
         "gitignore" = "curl -sL https://www.gitignore.io/api/$argv";
         "nx" = {
           body = ''
@@ -324,7 +323,7 @@
             sed -i "s!’n\b!'n!g" $argv
           '';
         };
-      };  # ..programs.fish.functions
+      }; # ..programs.fish.functions
       plugins = [
         # You can get the fingerprint with
         #  nix-prefetch-url --unpack https://github.com/$owner/$repo/archive/$rev.tar.gz
@@ -337,7 +336,7 @@
           src = pkgs.fetchFromGitHub {
             owner = "oh-my-fish";
             repo = "plugin-config";
-            rev = "13c424efb73b153d9b8ad92916cf51159d44099d";  # master on 2021-02-09. Updated on 2016-03-18
+            rev = "13c424efb73b153d9b8ad92916cf51159d44099d"; # master on 2021-02-09. Updated on 2016-03-18
             sha256 = "0x1rs89pmj5i8md2ihaw7dq62rz0qgkfky9vply5nx3immd66y6v";
           };
         }
@@ -349,7 +348,7 @@
           src = pkgs.fetchFromGitHub {
             owner = "gazorby";
             repo = "fish-abbreviation-tips";
-            rev = "8ed76a62bb044ba4ad8e3e6832640178880df485";  # master on 2023-01-23. Updated on 2024-10-30
+            rev = "8ed76a62bb044ba4ad8e3e6832640178880df485"; # master on 2023-01-23. Updated on 2024-10-30
             sha256 = "05b5qp7yly7mwsqykjlb79gl24bs6mbqzaj5b3xfn3v2b7apqnqp";
           };
         }
@@ -365,7 +364,7 @@
           src = pkgs.fetchFromGitHub {
             owner = "franciscolourenco";
             repo = "done";
-            rev = "d6abb267bb3fb7e987a9352bc43dcdb67bac9f06";  # master on 2022-06-30. Updated on 2021-10-10
+            rev = "d6abb267bb3fb7e987a9352bc43dcdb67bac9f06"; # master on 2022-06-30. Updated on 2021-10-10
             sha256 = "6oeyN9ngXWvps1c5QAUjlyPDQwRWAoxBiVTNmZ4sG8E=";
           };
         }
@@ -376,7 +375,7 @@
           src = pkgs.fetchFromGitHub {
             owner = "laughedelic";
             repo = "pisces";
-            rev = "e45e0869855d089ba1e628b6248434b2dfa709c4";  # master on 2022-06-30. Updated on 2020-11-30
+            rev = "e45e0869855d089ba1e628b6248434b2dfa709c4"; # master on 2022-06-30. Updated on 2020-11-30
             sha256 = "073wb83qcn0hfkywjcly64k6pf0d7z5nxxwls5sa80jdwchvd2rs";
           };
         }
@@ -403,9 +402,9 @@
         #     sha256 = "1qk2fa33jn4j3xxaljmm11d6rbng6d5gglrhwavb72jib4vmkwyb";
         #   };
         # }
-      ];  # ..programs.fish.plugins
-    };  # ..programs.fish
-  };  # ..programs
+      ]; # ..programs.fish.plugins
+    }; # ..programs.fish
+  }; # ..programs
 
   systemd = {
     user = {

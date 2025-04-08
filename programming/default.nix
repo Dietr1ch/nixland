@@ -18,9 +18,7 @@
   ];
 
   home = {
-    packages = with pkgs; [
-      tokei
-    ];  # ..home.packages
+    packages = with pkgs; [ tokei ];
 
     file = {
 
@@ -35,8 +33,8 @@
           set history size 500000
           set history filename ~/.cache/gdb/history
         '';
-      };  # ..home.file.".config/gdb/gdbinit"
+      }; # ..home.file.".config/gdb/gdbinit"
 
-    };  # ..home.file
-  };  # ..home
+    }; # ..home.file
+  }; # ..home
 }
