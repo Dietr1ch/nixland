@@ -2,6 +2,7 @@
 
 {
   programs = {
+    # https://home-manager-options.extranix.com/?release=master&query=programs.qutebrowser
     qutebrowser = {
       enable = true;
 

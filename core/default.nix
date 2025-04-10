@@ -9,5 +9,6 @@
     ./jujutsu.nix
     ./passwords.nix
     ./ssh.nix
+    ./tracing.nix
   ];
 }
