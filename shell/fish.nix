@@ -103,7 +103,8 @@
         ga = "git add";
         grm = "git rm --cached";
         gc = "git commit";
-        gam = "git commit --amend";
+        gca = "git commit --amend --no-edit";
+        gcA = "git commit --amend";
 
         gco = "git checkout";
 
