@@ -21,7 +21,7 @@
         };
       };
     }; # ..programs.tealdeer
-  };
+  }; # ..programs
 
   home = {
     packages = with pkgs; [ manix ];
