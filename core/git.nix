@@ -2,6 +2,10 @@
 
 {
   programs = {
+    mergiraf = {
+      enable = true;
+    };
+
     git = {
       enable = true;
 
