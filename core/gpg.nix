@@ -71,13 +71,17 @@
 
       # Configuration
       # ~/.gnupg/gpg-agent.conf
-      pinentryPackage = pkgs.pinentry-qt;
-
       grabKeyboardAndMouse = true;
       enableSshSupport = true;
 
       maxCacheTtl = 5 * 60; # 5 minutes
       maxCacheTtlSsh = 15 * 60; # 15 minutes
+
+      # https://home-manager-options.extranix.com/?release=master&query=services.gpg-agent.pinentry
+      pinentry = {
+        program = "pinentry-qt";
+        package = pkgs.pinentry-qt;
+      };
     };
   };
 
