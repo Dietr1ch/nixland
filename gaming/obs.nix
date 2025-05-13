@@ -9,4 +9,10 @@
       ];
     };
   };
+
+  home = {
+    sessionVariables = {
+      "OBS_VKCAPTURE" = "1";
+    };
+  };
 }
