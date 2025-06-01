@@ -11,6 +11,6 @@
     ./revolt.nix
     ./sdl.nix
     ./steam.nix
-    ./wine.nix
+    # ./wine.nix
   ];
 }
