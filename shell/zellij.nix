@@ -36,8 +36,10 @@ in
 
         copy_command = "wl-copy";
 
-        session_serialization = true;
-        serialize_pane_viewport = true;
+        # Avoid touching the disk. Sessions will live in memory.
+        session_serialization = false;
+        disable_session_metadata = true;
+        serialize_pane_viewport = false;
 
         scroll_buffer_size = 10000;
         scrollback_lines_to_serialize = 10000;
