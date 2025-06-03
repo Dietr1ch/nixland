@@ -2,11 +2,14 @@
 
 {
   programs = {
+    # https://home-manager-options.extranix.com/?release=master&query=programs.emacs
     emacs = {
       enable = true;
 
-      package = pkgs.emacs30-pgtk;
-      extraPackages = epkgs: with epkgs; [ ];
+      package = pkgs.emacs-pgtk;
+      extraPackages = epkgs: with epkgs; [
+        vterm
+      ];
     }; # ..programs.emacs
   }; # ..programs
 
@@ -17,12 +20,16 @@
       # email
       # mu
       # org-roam
+
+      emacs-lsp-booster
+      emacs-all-the-icons-fonts
+
       sqlite
       graphviz
     ];
 
     sessionVariables = {
-      LSP_USE_PLISTS = "true";
+      "LSP_USE_PLISTS" = "true";
     };
   }; # ..home
 
