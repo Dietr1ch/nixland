@@ -9,6 +9,10 @@
   # };  # ..programs
 
   home = {
-    packages = with pkgs; [ librewolf-wayland ]; # ..home.packages
+    packages = with pkgs; [
+      librewolf-wayland
+
+      kdePackages.plasma-browser-integration
+    ]; # ..home.packages
   }; # ..home
 }
