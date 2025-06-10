@@ -8,6 +8,7 @@
 
       package = pkgs.emacs-pgtk;
       extraPackages = epkgs: with epkgs; [
+        tree-sitter-langs
         vterm
       ];
     }; # ..programs.emacs
