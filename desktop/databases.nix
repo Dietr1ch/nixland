@@ -5,7 +5,7 @@
     packages = with pkgs; [
       duckdb
 
-      pgadmin
+      # BROKEN: pgadmin
       postgres-lsp
 
       sqlint
