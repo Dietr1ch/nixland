@@ -6,8 +6,6 @@
     packages = with pkgs; [
       yubikey-manager
       yubioath-flutter
-      yubikey-personalization
-      yubikey-personalization-gui
     ];
   };
 }
