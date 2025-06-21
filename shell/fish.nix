@@ -78,7 +78,6 @@
         g = "git";
 
         gs = "git status";
-        gss = "git status .";
         gst = "git stash";
 
         gh = "git h";
