@@ -7,6 +7,8 @@
 
       hunspell
       hunspellDicts.en_GB-large
+
+      harper
     ];
   };
 }
