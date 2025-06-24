@@ -3,8 +3,8 @@
 {
   home = {
     packages = with pkgs; [
-      lttng-tools
-      lttng-ust
+      # BROKEN: lttng-tools
+      # BROKEN: lttng-ust
     ];
   };
 }
