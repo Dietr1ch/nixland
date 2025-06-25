@@ -6,6 +6,6 @@
     ./downloaders.nix
     ./librewolf.nix
     ./lynx.nix
-    ./qutebrowser.nix
+    # BROKEN: ./qutebrowser.nix
   ];
 }
