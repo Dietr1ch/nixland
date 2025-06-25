@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
   programs = {
@@ -8,6 +8,7 @@
       # https://github.com/carapace-sh/carapace-bin/
       enable = true;
 
+      enableFishIntegration = true;
       enableNushellIntegration = true;
     }; # ..programs.carapace
   }; # ..programs
