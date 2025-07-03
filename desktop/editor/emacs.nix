@@ -28,10 +28,6 @@
       sqlite
       graphviz
     ];
-
-    sessionVariables = {
-      "LSP_USE_PLISTS" = "true";
-    };
   }; # ..home
 
   services = {
