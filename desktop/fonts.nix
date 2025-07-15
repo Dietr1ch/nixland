@@ -20,7 +20,7 @@
           "Source Code Pro"
           "Hack"
         ];
-        emoji = [ "Noto Color" ];
+        emoji = [ "Noto Color Emoji" ];
       };
     };
   };
@@ -68,6 +68,7 @@
       powerline-fonts
 
       emojione
+      nerd-fonts.symbols-only
       noto-fonts-emoji
     ]; # ..home.packages
   }; # ..home
