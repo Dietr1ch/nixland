@@ -9,7 +9,7 @@
       python313Packages.types-tqdm
 
       python313Packages.pandas
-      python313Packages.pandas-stubs
+      # BROKEN: python313Packages.pandas-stubs
       python313Packages.xlrd # Excel
 
       python313Packages.polars
