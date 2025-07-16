@@ -4,26 +4,26 @@
   home = {
     packages = with pkgs; [
       python3
-      python312Packages.ipython
-      python312Packages.tqdm
-      python312Packages.types-tqdm
+      python313Packages.ipython
+      python313Packages.tqdm
+      python313Packages.types-tqdm
 
-      python312Packages.pandas
-      python312Packages.pandas-stubs
-      python312Packages.xlrd # Excel
+      python313Packages.pandas
+      python313Packages.pandas-stubs
+      python313Packages.xlrd # Excel
 
-      python312Packages.polars
-      python312Packages.altair
-      python312Packages.vega
-      # TODO Add python312Packages.vl-convert
+      python313Packages.polars
+      python313Packages.altair
+      python313Packages.vega
+      # TODO Add python313Packages.vl-convert
 
-      python312Packages.numpy
-      python312Packages.scipy
-      python312Packages.traittypes
+      python313Packages.numpy
+      python313Packages.scipy
+      python313Packages.traittypes
 
-      python312Packages.matplotlib
+      python313Packages.matplotlib
 
-      python312Packages.requests
+      python313Packages.requests
 
       # Tools
       ruff # Lint, Formatter
