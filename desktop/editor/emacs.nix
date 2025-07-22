@@ -21,6 +21,7 @@
       # email
       # mu
       # org-roam
+      emacsclient-commands
 
       emacs-lsp-booster
       emacs-all-the-icons-fonts
