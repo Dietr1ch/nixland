@@ -20,7 +20,12 @@
           "Source Code Pro"
           "Hack"
         ];
-        emoji = [ "Noto Color Emoji" ];
+        emoji = [
+          "Noto Color Emoji"
+          "Noto Emoji"
+          "Noto Mono"
+          "EmojiOne Color"
+        ];
       };
     };
   };
