@@ -121,7 +121,7 @@
 
     # ~/Code/github/Dietr1ch/home-manager/modules/services/mpdris2.nix
     mpdris2 = {
-      # BROKEN: enable = true;
+      enable = true;
 
       multimediaKeys = true;
       notifications = true;
