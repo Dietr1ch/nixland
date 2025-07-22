@@ -7,17 +7,19 @@
       enable = true;
 
       defaultFonts = {
+        # How to check font-family:
+        # find /nix/var/nix/profiles/system/sw/share/X11/fonts/ -type l | fzf --preview 'fc-query {} | grep "^\\s\\+family:" | grep "^\\s\\+family:" | cut -d\'"\' -f2'
         serif = [
           "DejaVu Serif"
           "Liberation Serif"
         ];
         sansSerif = [
           "DejaVu Sans"
-          "Ubuntu"
+          "Liberation Sans"
         ];
         monospace = [
-          "FiraCode Nerd Font Mono"
-          "Source Code Pro"
+          "FiraCode"
+          "Source Code Pro for Powerline"
           "Hack"
         ];
         emoji = [
