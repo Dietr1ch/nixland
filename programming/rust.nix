@@ -1,6 +1,12 @@
 { pkgs, ... }:
 
 {
+  programs = {
+    bacon = {
+      enable = true;
+    };
+  };
+
   home = {
     packages = with pkgs; [
       cargo
@@ -17,8 +23,6 @@
       cargo-toml-lint
       cargo-watch
       critcmp
-
-      bacon
     ]; # ..home.packages
 
     file = {
