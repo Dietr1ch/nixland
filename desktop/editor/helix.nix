@@ -5,6 +5,8 @@
     helix = {
       # https://rycee.gitlab.io/home-manager/options.html#opt-programs.helix.enable
       enable = true;
+
+      # Generates ~/.config/helix/config.toml
       settings = {
         # https://github.com/helix-editor/helix/wiki/Themes
         theme = "nord";
