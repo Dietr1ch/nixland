@@ -90,6 +90,9 @@
   }; # ..programs
 
   home = {
-    packages = with pkgs; [ ffmpeg ];
+    packages = with pkgs; [
+      ffmpeg
+      flac
+    ];
   }; # ..home
 }
