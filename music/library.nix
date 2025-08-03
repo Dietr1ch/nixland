@@ -3,8 +3,7 @@
 {
   programs = {
     beets = {
-      # TODO: Enable beets
-      enable = false;
+      enable = true;
 
       # ~/.config/beets/config.yaml
       settings = {
