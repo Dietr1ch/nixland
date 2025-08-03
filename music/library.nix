@@ -91,6 +91,7 @@
 
   home = {
     packages = with pkgs; [
+      cuetools
       ffmpeg
       flac
     ];
