@@ -178,8 +178,10 @@
 
       # Disk
       duf
-      du-dust
       ncdu
+      # du-dust
+      # dua
+
       # Network
       nmap
       gping
