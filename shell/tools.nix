@@ -153,12 +153,15 @@
     packages = with pkgs; [
       gawk
       parallel
+
       ## Finders
       fzf
       fzy
+
       ## Viewers
       hexyl
       lnav
+
       ## Watchers
       pv
       libnotify
@@ -172,22 +175,23 @@
       htop
       bottom
       zenith
+
       # Disk
       duf
       du-dust
       ncdu
       # Network
-      # TODO: Add `wol`
-      # wol
       nmap
       gping
       hping
       nethogs
       trippy
       bandwhich
-      aria2
       dig
       dogdns
+      # Downloaders
+      aria2
+
       # HTTP
       httpie
       xh
