@@ -53,18 +53,18 @@
     };
   };
 
-  # ~/.config/systemd/user/emacs.service
+  # Generates ~/.config/systemd/user/emacs.service
   systemd = {
     user = {
       services = {
         emacs = {
-          serviceConfig = {
+          Service = {
             # Allow long startups due to recompilation.
             TimeoutStartSec = 60;
-          };
 
-          environment = {
-            "LSP_USE_PLISTS" = "true";
+            Environment = [
+              "LSP_USE_PLISTS=true"
+            ];
           };
         };
       };
