@@ -59,12 +59,16 @@
       services = {
         emacs = {
           # NOTE: I think this fixes startup when the graphical session fails
-          Unit = {
-            After = [ "graphical-session-pre.target" ];
-          };
-          Service = {
+          after = [
+            "graphical-session-pre.target"
+          ];
+          serviceConfig = {
             # Allow long startups due to recompilation.
             TimeoutStartSec = 60;
+          };
+
+          environment = {
+            "LSP_USE_PLISTS" = "true";
           };
         };
       };
