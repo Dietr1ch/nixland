@@ -29,6 +29,12 @@
       sqlite
       graphviz
     ];
+
+    # Needed at both compile-time and run-time
+    # https://discourse.doomemacs.org/t/using-lsp-use-plists-with-rust-analyzer-stops-updating-diagnostics-on-save/2832
+    sessionVariables = {
+      "LSP_USE_PLISTS" = "true";
+    };
   }; # ..home
 
   services = {
