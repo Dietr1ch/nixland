@@ -58,10 +58,6 @@
     user = {
       services = {
         emacs = {
-          # NOTE: I think this fixes startup when the graphical session fails
-          after = [
-            "graphical-session-pre.target"
-          ];
           serviceConfig = {
             # Allow long startups due to recompilation.
             TimeoutStartSec = 60;
