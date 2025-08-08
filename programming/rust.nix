@@ -9,6 +9,8 @@
 
   home = {
     packages = with pkgs; [
+      rust-analyzer
+
       cargo
       cargo-audit
       cargo-benchcmp
