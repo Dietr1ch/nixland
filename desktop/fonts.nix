@@ -27,6 +27,7 @@
           "Noto Emoji"
           "Noto Mono"
           "EmojiOne Color"
+          "Twemoji Mozilla"
         ];
       };
     };
@@ -77,6 +78,7 @@
       emojione
       nerd-fonts.symbols-only
       noto-fonts-emoji
+      twemoji-color-font
     ]; # ..home.packages
   }; # ..home
 }
