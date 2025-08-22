@@ -7,10 +7,11 @@
       enable = true;
 
       package = pkgs.emacs-pgtk;
-      extraPackages = epkgs: with epkgs; [
-        # NOTE: tree-sitter-langs gets built, but isn't available to emacs
-        vterm
-      ];
+      extraPackages =
+        epkgs: with epkgs; [
+          # NOTE: tree-sitter-langs gets built, but isn't available to emacs
+          vterm
+        ];
     }; # ..programs.emacs
   }; # ..programs
 
