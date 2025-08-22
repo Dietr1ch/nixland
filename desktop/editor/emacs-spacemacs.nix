@@ -49,24 +49,10 @@
 
       # Spacemacs
       # =========
-      # TODO: Switch to flakes
+      # TODO: Switch to a flake-backed Spacemacs config
 
-      # Spacemacs master
-      # git clone https://github.com/syl20bnr/spacemacs ~/.config/emacs/spacemacs/distro
+      # git clone https://github.com/syl20bnr/spacemacs --branch 'develop' ~/.config/emacs/spacemacs/distro-ro
       ".config/emacs/spacemacs/distro-ro" = {
-        recursive = true;
-        source = pkgs.fetchFromGitHub {
-          # https://github.com/syl20bnr/spacemacs
-          owner = "syl20bnr";
-          repo = "spacemacs";
-          rev = "26b8fe0c317915b622825877eb5e5bdae88fb2b2";
-          sha256 = "00cfm6caaz85rwlrbs8rm2878wgnph6342i9688w4dji3dgyz3rz";
-        };
-      };
-
-      # Spacemacs develop
-      # git clone https://github.com/syl20bnr/spacemacs --branch 'develop' ~/.config/emacs/spacemacs-dev/distro
-      ".config/emacs/spacemacs-dev/distro-ro" = {
         recursive = true;
         source = pkgs.fetchFromGitHub {
           # https://github.com/syl20bnr/spacemacs
@@ -79,9 +65,9 @@
 
       # Doom Emacs
       # ==========
-      # TODO: Switch to flakes
+      # TODO: Switch to a flake-backed doom-emacs config
 
-      # git clone https://github.com/hlissner/doomemacs ~/.config/emacs/doom/distro
+      # git clone https://github.com/hlissner/doomemacs ~/.config/emacs/doom/distro-ro
       ".config/emacs/doom/distro-ro" = {
         recursive = true;
         source = pkgs.fetchFromGitHub {
