@@ -14,9 +14,6 @@
         # TODO: Enable `nix-direnv` once it properly works with flakes
         enable = false;
       };
-      mise = {
-        enable = true;
-      };
 
       # https://github.com/direnv/direnv/tree/master/man/direnv.toml.1.md#config
       config = {
