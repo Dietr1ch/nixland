@@ -8,13 +8,14 @@
 
       enableSessionWide = false;
 
+      # ~/.config/MangoHud/MangoHud.conf
+      # https://github.com/flightlessmango/MangoHud/blob/master/data/MangoHud.conf
       settings = {
-        full = true;
         output_folder = "/tmp/mangohud/";
       };
 
-      # https://github.com/flightlessmango/MangoHud/blob/master/data/MangoHud.conf
       settingsPerApplication = {
+        # ~/.config/MangoHud/mpv.conf
         "mpv" = {
           no_display = true;
         };
