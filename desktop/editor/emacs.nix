@@ -16,10 +16,6 @@
 
   home = {
     packages = with pkgs; [
-      # emacs
-      # -----
-      # email
-      # mu
       # org-roam
       emacsclient-commands
 

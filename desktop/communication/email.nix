@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   # Requires account setup.
@@ -58,4 +58,10 @@
       };
     };
   };
+
+  home = {
+    packages = with pkgs; [
+      mu
+    ];
+  }; # ..home
 }
