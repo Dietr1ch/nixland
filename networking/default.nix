@@ -4,7 +4,10 @@
   imports = [ ];
 
   home = {
-    packages = with pkgs; [ wireshark-qt ];
+    packages = with pkgs; [
+      wireshark-qt
+      xh # HTTPie clone
+    ];
   };
 
   services = {
