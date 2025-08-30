@@ -13,11 +13,15 @@
     ncmpcpp = {
       enable = true;
 
+      # ~/.config/ncmpcpp/config
+      # Default config: https://github.com/ncmpcpp/ncmpcpp/blob/master/doc/config
       settings = {
+        media_library_primary_tag = "album_artist";
         follow_now_playing_lyrics = "yes";
         enable_window_title = "no";
       };
 
+      # ~/.config/ncmpcpp/bindings
       bindings = [
         # https://gist.github.com/Soft/959188/1ffff2f3360b651c74bb9b7b5c6d854ab71b7d08
         {
