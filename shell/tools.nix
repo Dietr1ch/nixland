@@ -195,7 +195,7 @@
       aria2
 
       # HTTP
-      xh  # httpie replacement
+      xh # httpie replacement
 
       hyperfine
 

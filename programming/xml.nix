@@ -3,7 +3,7 @@
 {
   home = {
     packages = with pkgs; [
-      opensp  # onsgmls
+      opensp # onsgmls
       xq-xml # jq, but for xml
     ]; # ..home.packages
   }; # ..home
