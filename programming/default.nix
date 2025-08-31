@@ -10,6 +10,7 @@
     ./nix.nix
 
     ./build.nix
+    ./devenv.nix
 
     ./web.nix
 
