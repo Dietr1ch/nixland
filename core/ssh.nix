@@ -10,6 +10,9 @@
       # --------
       # ~/.ssh/config
 
+      # Disable old default config. It's about to be deprecated and raises a warning.
+      enableDefaultConfig = false;
+
       matchBlocks = {
         "*" = {
           addKeysToAgent = "no";
