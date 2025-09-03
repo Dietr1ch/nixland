@@ -40,12 +40,12 @@
         {
           all = import ./all.nix;
 
-          core = import ./core; # ./desktop/core.nix
+          core = import ./core; # ./core/default.nix
           desktop = import ./desktop; # ./desktop/default.nix
-          desktop-hyprland = import ./desktop; # ./desktop/hyprland.nix
+          desktop-hyprland = import ./desktop/hyprland.nix;
           gaming = import ./gaming; # ./gaming/default.nix
-          gaming-emulators = import ./gaming; # ./gaming/emulators.nix
-          gaming-wine = import ./gaming; # ./gaming/wine.nix
+          gaming-emulators = import ./gaming/emulators.nix;
+          gaming-wine = import ./gaming/wine.nix;
           music = import ./music; # ./music/default.nix
           networking = import ./networking; # ./networking/default.nix
           programming = import ./programming; # ./programming/default.nix
