@@ -42,6 +42,7 @@
 
           core = import ./core; # ./desktop/core.nix
           desktop = import ./desktop; # ./desktop/default.nix
+          desktop-hyprland = import ./desktop; # ./desktop/hyprland.nix
           gaming = import ./gaming; # ./gaming/default.nix
           gaming-emulators = import ./gaming; # ./gaming/emulators.nix
           gaming-wine = import ./gaming; # ./gaming/wine.nix
