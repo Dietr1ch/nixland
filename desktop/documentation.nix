@@ -2,6 +2,6 @@
 
 {
   home = {
-    packages = with pkgs; [ zeal-qt6 ];
+    packages = with pkgs; [ zeal ];
   };
 }
