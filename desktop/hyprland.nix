@@ -18,6 +18,7 @@ in
       brightnessctl
       wofi
       swaylock
+      mpc
     ];
   };
 
@@ -183,6 +184,16 @@ in
           bind = [
             "$mod, q, exec, swaylock"
             "$MOD, Q, exit,"
+
+            # Audio
+            ",XF86AudioPlay, exec, mpc toggle"
+            ",XF86AudioNext, exec, mpc next"
+            ",XF86AudioPrev, exec, mpc prev"
+            ",XF86AudioRaiseVolume, exec, mpc volume +2"
+            ",XF86AudioLowerVolume, exec, mpc volume -2"
+            # Video
+            ",XF86MonBrightnessUp, exec, brightnessctl s +5%"
+            ",XF86MonBrightnessDown, exec, brightnessctl s 5%-"
 
             "$mod, D, killactive,"
             "$mod, M, togglefloating,"
