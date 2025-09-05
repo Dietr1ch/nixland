@@ -8,8 +8,11 @@ in
   home = {
     packages = with pkgs; [
       hyprland-activewindow
+      hyprcursor
       # ~/.config/hypr/hyprpaper.conf
       hyprpaper
+      hyprpolkitagent
+      hyprsysteminfo
 
       mpc_cli
       brightnessctl
