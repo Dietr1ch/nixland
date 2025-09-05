@@ -17,6 +17,7 @@ in
       mpc_cli
       brightnessctl
       wofi
+      swaylock
     ];
   };
 
@@ -180,6 +181,7 @@ in
 
           # https://wiki.hyprland.org/Configuring/Binds/
           bind = [
+            "$mod, q, exec, swaylock"
             "$MOD, Q, exit,"
 
             "$mod, D, killactive,"
