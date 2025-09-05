@@ -231,7 +231,6 @@ in
             "$mod, F7,  workspace, 7"
             "$mod, F8,  workspace, 8"
             "$mod, F9,  workspace, 9"
-            "$mod, F10, workspace, 10"
 
             # Move active window to a workspace with mod + SHIFT + [0-9]
             "$MOD, F1,  movetoworkspacesilent, 1"
