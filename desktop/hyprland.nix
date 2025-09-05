@@ -234,16 +234,15 @@ in
             "$mod, F10, workspace, 10"
 
             # Move active window to a workspace with mod + SHIFT + [0-9]
-            "$MOD, F1,  movetoworkspace, 1"
-            "$MOD, F2,  movetoworkspace, 2"
-            "$MOD, F3,  movetoworkspace, 3"
-            "$MOD, F4,  movetoworkspace, 4"
-            "$MOD, F5,  movetoworkspace, 5"
-            "$MOD, F6,  movetoworkspace, 6"
-            "$MOD, F7,  movetoworkspace, 7"
-            "$MOD, F8,  movetoworkspace, 8"
-            "$MOD, F9,  movetoworkspace, 9"
-            "$MOD, F10, movetoworkspace, 10"
+            "$MOD, F1,  movetoworkspacesilent, 1"
+            "$MOD, F2,  movetoworkspacesilent, 2"
+            "$MOD, F3,  movetoworkspacesilent, 3"
+            "$MOD, F4,  movetoworkspacesilent, 4"
+            "$MOD, F5,  movetoworkspacesilent, 5"
+            "$MOD, F6,  movetoworkspacesilent, 6"
+            "$MOD, F7,  movetoworkspacesilent, 7"
+            "$MOD, F8,  movetoworkspacesilent, 8"
+            "$MOD, F9,  movetoworkspacesilent, 9"
 
             # Example special workspace (scratchpad) (49: DOLLAR $)
             "$mod, code:49, togglespecialworkspace, magic"
