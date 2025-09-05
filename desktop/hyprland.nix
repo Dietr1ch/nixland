@@ -234,12 +234,12 @@ in
             "$MOD, F9,  movetoworkspace, 9"
             "$MOD, F10, movetoworkspace, 10"
 
-            # ?? (36: RETURN)
-            # "$mod, code:36, togglespecialworkspace, magic"
-            # "$MOD, code:36, movetoworkspace,        special:magic"
-
             # Example special workspace (scratchpad) (49: DOLLAR $)
-            "$mod, code:49, hyprexpo:expo, toggle"
+            "$mod, code:49, togglespecialworkspace, magic"
+            "$MOD, code:49, movetoworkspace, special:magic"
+
+            # Expo
+            "$mod, S, hyprexpo:expo, toggle"
 
             # Scroll through existing workspaces with mod + scroll
             "$mod, mouse_down, workspace, e+1"
