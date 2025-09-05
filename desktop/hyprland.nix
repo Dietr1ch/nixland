@@ -179,6 +179,8 @@ in
 
           "$mod" = lib.mkDefault "SUPER";
           "$MOD" = lib.mkDefault "SUPER SHIFT";
+          "$cmod" = lib.mkDefault "CONTROL SUPER";
+          "$CMOD" = lib.mkDefault "CONTROL SUPER SHIFT";
 
           # https://wiki.hyprland.org/Configuring/Binds/
           bind = [
@@ -215,6 +217,9 @@ in
             "$mod, L, movefocus, r"
             "$mod, K, movefocus, u"
             "$mod, J, movefocus, d"
+            # Move workspace
+            "$cmod, h, workspace, e-1"
+            "$cmod, l, workspace, e+1"
             # Swap windows with mod + SHIFT + "arrow" keys
             "$MOD, H, movewindow, l"
             "$MOD, L, movewindow, r"
@@ -242,6 +247,8 @@ in
             "$MOD, F7,  movetoworkspacesilent, 7"
             "$MOD, F8,  movetoworkspacesilent, 8"
             "$MOD, F9,  movetoworkspacesilent, 9"
+            "$CMOD, H, movetoworkspace, e-1"
+            "$CMOD, L, movetoworkspace, e+1"
 
             # Example special workspace (scratchpad) (49: DOLLAR $)
             "$mod, code:49, togglespecialworkspace, magic"
