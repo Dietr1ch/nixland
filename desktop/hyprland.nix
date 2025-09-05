@@ -233,6 +233,8 @@ in
             "$mod,       code:39, togglespecialworkspace, magic"
             "$MOD, code:39, movetoworkspace,        special:magic"
 
+            "$mod, S, hyprexpo:expo, toggle"
+
             # Scroll through existing workspaces with mod + scroll
             "$mod, mouse_down, workspace, e+1"
             "$mod, mouse_up, workspace, e-1"
@@ -254,6 +256,18 @@ in
             "suppressevent maximize, class:.*" # You'll probably like this.
             "immediate, class:^(cs2)$" # Allow tearing in CS2
           ];
+
+          plugin = {
+            # https://github.com/hyprwm/hyprland-plugins/tree/main/hyprexpo
+            "hyprexpo" = {
+              columns = 3;
+
+              enable_gesture = true;
+              gesture_fingers = 3; # 3 or 4
+              gesture_distance = 300; # how far is the "max"
+              gesture_positive = true; # positive = swipe down. Negative = swipe up.
+            };
+          };
         };
 
         extraConfig = ''
