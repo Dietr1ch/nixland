@@ -7,6 +7,10 @@ in
 {
   home = {
     packages = with pkgs; [
+      hyprland-activewindow
+      # ~/.config/hypr/hyprpaper.conf
+      hyprpaper
+
       mpc_cli
       brightnessctl
       wofi
@@ -131,10 +135,13 @@ in
           # master = {
           # };
 
+          # https://wiki.hypr.land/Configuring/Variables/#misc
           misc = {
             vfr = high_perf;
             force_default_wallpaper = 1; # Set to 0 or 1 to disable the anime mascot wallpapers
+
             disable_hyprland_logo = true;
+            disable_splash_rendering = true;
           };
 
           # Input
