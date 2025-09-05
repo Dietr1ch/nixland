@@ -229,9 +229,9 @@ in
             "$MOD, F9,  movetoworkspace, 9"
             "$MOD, F10, movetoworkspace, 10"
 
-            # Example special workspace (scratchpad)
-            "$mod,       code:39, togglespecialworkspace, magic"
-            "$MOD, code:39, movetoworkspace,        special:magic"
+            # Example special workspace (scratchpad) (36: DOLLAR $)
+            "$mod,       code:36, togglespecialworkspace, magic"
+            "$MOD, code:36, movetoworkspace,        special:magic"
 
             "$mod, S, hyprexpo:expo, toggle"
 
