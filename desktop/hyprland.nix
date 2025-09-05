@@ -73,6 +73,7 @@ in
             # "nm-applet &"
             # "waybar & hyprpaper & librewolf"
             "krunner --daemon"
+            "hyprpaper"
           ];
 
           # Look and Feel
