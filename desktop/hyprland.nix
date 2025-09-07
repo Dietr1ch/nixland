@@ -159,6 +159,11 @@ in
             touchpad = {
               natural_scroll = true;
             };
+
+            kb_options = lib.concatStringsSep "," [
+              "ctrl:nocaps"
+              "fkeys:basic_13-24"
+            ];
           };
           # https://wiki.hyprland.org/Configuring/Variables/#gestures
           gestures = {
