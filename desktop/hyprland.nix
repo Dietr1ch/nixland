@@ -5,6 +5,12 @@ let
   high_perf = true;
 in
 {
+  home = {
+    packages = with pkgs; [
+      mpc
+      playerctl
+    ];
+  };
   wayland = {
     windowManager = {
       # https://nixos.wiki/wiki/Hyprland
@@ -177,11 +183,11 @@ in
             "$MOD, Q, exit,"
 
             # Audio
-            ",XF86AudioPlay, exec, mpc toggle"
-            ",XF86AudioNext, exec, mpc next"
-            ",XF86AudioPrev, exec, mpc prev"
             ",XF86AudioRaiseVolume, exec, mpc volume +2"
             ",XF86AudioLowerVolume, exec, mpc volume -2"
+            ",XF86AudioPlay, exec, playerctl play-pause"
+            ",XF86AudioNext, exec, playerctl next"
+            ",XF86AudioPrev, exec, playerctl previous"
             # Video
             ",XF86MonBrightnessUp, exec, brightnessctl s +5%"
             ",XF86MonBrightnessDown, exec, brightnessctl s 5%-"
