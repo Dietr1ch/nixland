@@ -149,10 +149,13 @@ in
               natural_scroll = true;
             };
 
-            kb_options = lib.concatStringsSep "," [
-              "ctrl:nocaps"
-              "fkeys:basic_13-24"
-            ];
+            kb_options = lib.mkDefault (
+              lib.concatStringsSep "," [
+                # "compose:ralt"
+                "ctrl:nocaps"
+                "fkeys:basic_13-24"
+              ]
+            );
           };
           # https://wiki.hyprland.org/Configuring/Variables/#gestures
           gestures = {
