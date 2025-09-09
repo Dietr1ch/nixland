@@ -21,7 +21,10 @@
   ];
 
   home = {
-    packages = with pkgs; [ tokei ];
+    packages = with pkgs; [
+      cf-tool
+      tokei
+    ];
 
     file = {
 
