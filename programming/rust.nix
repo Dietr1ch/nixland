@@ -9,7 +9,10 @@
 
   home = {
     packages = with pkgs; [
+      rustc
       rust-analyzer
+      clippy
+      rustfmt
 
       cargo
       cargo-audit
@@ -38,6 +41,18 @@
     ]; # ..home.packages
 
     file = {
+      ".config/rustfmt/rustfmt.toml" = {
+        text = ''
+          # https://github.com/rust-lang/rustfmt/blob/master/Configurations.md
+
+          edition = "2024"
+
+          hard_tabs = true
+          unstable_features = true
+          format_code_in_doc_comments = true
+        '';
+      }; # ..home.file.".config/rustfmt/rustfmt.toml"
+
       ".cargo/config.toml" = {
         text = ''
           # [doc]
