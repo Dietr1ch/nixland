@@ -18,6 +18,8 @@
 
     ./json.nix
     ./xml.nix
+
+    ./competitive_programming.nix
   ];
 
   home = {
