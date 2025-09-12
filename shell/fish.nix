@@ -130,8 +130,13 @@
         # systemd
         # -------
         sc = "systemctl";
+        ssc = "sudo systemctl";
         scu = "systemctl  --user";
         sj = "journalctl";
+
+        sja = "sudo journalctl --no-hostname --boot '0' --since '20 minutes ago'";
+        sjs = "sudo journalctl --no-hostname --boot '0' --since '20 minutes ago' --unit";
+        sju = "journalctl --no-hostname --boot '0' --since '20 minutes ago' --user-unit";
       }; # ..programs.fish.shellAbbrs
 
       functions = {
