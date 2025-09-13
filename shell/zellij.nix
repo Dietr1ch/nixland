@@ -354,7 +354,7 @@ in
 
       ".config/zellij/plugins/sessionizer.wasm".source = pkgs.fetchurl {
         # https://github.com/laperlej/zellij-sessionizer/releases
-        url = "https://github.com/laperlej/zellij-sessionizer/releases/download/v0.4.3/zellij-sessionizer.wasm";
+        url = "https://github.com/laperlej/zellij-sessionizer/releases/download/v0.4.3/zellij-sessionizer.wasm"; # Latest as of 2025-09-10
         sha256 = "sha256-AGuWbuRX7Yi9tPdZTzDKULXh3XLUs4navuieCimUgzQ=";
       };
 
