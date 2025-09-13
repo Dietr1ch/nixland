@@ -13,6 +13,7 @@
       rust-analyzer
       clippy
       rustfmt
+      rust-script
 
       cargo
       cargo-audit
