@@ -14,6 +14,8 @@
     ./build.nix
     ./devenv.nix
 
+    ./constraint.nix
+
     ./web.nix
 
     ./json.nix
