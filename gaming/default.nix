@@ -3,7 +3,7 @@
 {
   imports = [
     ./chess.nix
-    ./discord.nix
+    ./comms.nix
     # ./emulators.nix
     ./gamescope.nix
     ./mangohud.nix
