@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ lib, pkgs, ... }:
 
 {
   imports = [
@@ -8,9 +8,13 @@
 
   home = {
     sessionVariables = {
-      DICTIONARY = "en_GB";
+      DICTIONARY = lib.mkDefault "en_GB";
+      DICPATH = lib.mkDefault "${pkgs.hunspell}/bin/hunspell";
     };
 
-    packages = with pkgs; [ hunspell ];
+    packages = with pkgs; [
+      hunspell
+      hunspellDicts.en_GB-large
+    ];
   };
 }
