@@ -6,6 +6,8 @@
       # LSP
       nixd
 
+      nix-diff
+
       # NOTE nixfmt still points to nixfmt-classic
       nixfmt-rfc-style
 
