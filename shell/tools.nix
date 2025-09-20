@@ -205,7 +205,6 @@
 
       # System
       # ------
-      binutils
       kdePackages.partitionmanager
       nix-tree
     ];
