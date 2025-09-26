@@ -64,32 +64,10 @@
     };
   };
 
-  services = {
-    # https://home-manager-options.extranix.com/?release=master&query=services.gpg-agent
-    gpg-agent = {
-      enable = true;
-
-      # Configuration
-      # ~/.gnupg/gpg-agent.conf
-      grabKeyboardAndMouse = true;
-      enableSshSupport = true;
-
-      maxCacheTtl = 5 * 60; # 5 minutes
-      maxCacheTtlSsh = 15 * 60; # 15 minutes
-
-      # https://home-manager-options.extranix.com/?release=master&query=services.gpg-agent.pinentry
-      pinentry = {
-        program = "pinentry-qt";
-        package = pkgs.pinentry-qt;
-      };
-    };
-  };
-
   home = {
     packages = with pkgs; [
-      pinentry-qt
-
       kdePackages.kleopatra
     ];
   };
 }
+
