@@ -3,7 +3,7 @@
 {
   home = {
     packages = with pkgs; [
-      vokoscreen
+      vokoscreen-ng
       kdePackages.spectacle
     ];
   };
