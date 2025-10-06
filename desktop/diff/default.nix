@@ -7,7 +7,9 @@
     git = {
       difftastic = {
         enable = true;
-        background = "dark";
+        options = {
+          background = "dark";
+        };
       };
     }; # ..programs.git
   }; # ..programs

@@ -119,10 +119,7 @@
         "shallow-clone" = "clone --single-branch --shallow-since $(date --iso-8601 --date '-7 days')";
         "commit-clone" = "clone --single-branch --depth 1";
       };
-      difftastic = {
-        enable = true;
-        background = "dark";
-      };
+      # ://desktop/diff/default.nix
 
       lfs = {
         enable = true;
