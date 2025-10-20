@@ -103,29 +103,12 @@
         "*.yaml merge=mergiraf"
         "*.yml merge=mergiraf"
       ];
-      aliases = {
-        "exec" = "!exec ";
-
-        "h" = "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short";
-        "ll" = "log --graph --abbrev-commit --decorate --max-count 200";
-        "lla" = "log --graph --abbrev-commit --decorate --max-count 200 --all";
-
-        "publish" = "!sh -c 'git push -u origin $(git branch-name)'";
-        "unpublish" = "!sh -c 'git push -u origin :$(git branch-name)'";
-
-        "branch-name" = "rev-parse --abbrev-ref HEAD";
-        "ls" = "!sh -c 'git ls-tree --name-only -r $(git branch-name)'";
-
-        "shallow-clone" = "clone --single-branch --shallow-since $(date --iso-8601 --date '-7 days')";
-        "commit-clone" = "clone --single-branch --depth 1";
-      };
-      # ://desktop/diff/default.nix
 
       lfs = {
         enable = true;
       };
 
-      extraConfig = {
+      settings = {
         init = {
           defaultBranch = "master";
         };
@@ -143,6 +126,23 @@
         pretty = {
           "oneliner" =
             "format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%<(12)%ar)%C(reset)  %s%C(dim white) - %an  %C(auto)%d%C(reset)'";
+        };
+
+        alias = {
+          "exec" = "!exec ";
+
+          "h" = "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short";
+          "ll" = "log --graph --abbrev-commit --decorate --max-count 200";
+          "lla" = "log --graph --abbrev-commit --decorate --max-count 200 --all";
+
+          "publish" = "!sh -c 'git push -u origin $(git branch-name)'";
+          "unpublish" = "!sh -c 'git push -u origin :$(git branch-name)'";
+
+          "branch-name" = "rev-parse --abbrev-ref HEAD";
+          "ls" = "!sh -c 'git ls-tree --name-only -r $(git branch-name)'";
+
+          "shallow-clone" = "clone --single-branch --shallow-since $(date --iso-8601 --date '-7 days')";
+          "commit-clone" = "clone --single-branch --depth 1";
         };
       };
     };

@@ -4,14 +4,16 @@
   imports = [ ./meld.nix ];
 
   programs = {
-    git = {
-      difftastic = {
-        enable = true;
-        options = {
-          background = "dark";
-        };
+    difftastic = {
+      enable = true;
+      options = {
+        background = "dark";
       };
-    }; # ..programs.git
+
+      git = {
+        enable = true;
+      };
+    }; # ..programs.difftastic
   }; # ..programs
 
   home = {
