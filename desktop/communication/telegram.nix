@@ -2,6 +2,6 @@
 
 {
   home = {
-    packages = with pkgs; [ tdesktop ];
+    packages = with pkgs; [ telegram-desktop ];
   };
 }
