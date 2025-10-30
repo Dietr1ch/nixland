@@ -77,7 +77,7 @@
 
       emojione
       nerd-fonts.symbols-only
-      noto-fonts-emoji
+      noto-fonts-color-emoji
       twemoji-color-font
     ]; # ..home.packages
   }; # ..home
