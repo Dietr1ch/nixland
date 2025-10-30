@@ -182,21 +182,6 @@
       # du-dust
       # dua
 
-      # Network
-      nmap
-      gping
-      hping
-      nethogs
-      trippy
-      bandwhich
-      dig
-      dogdns
-      # Downloaders
-      aria2
-
-      # HTTP
-      xh # httpie replacement
-
       hyperfine
 
       trash-cli
