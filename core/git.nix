@@ -150,15 +150,14 @@
 
   home = {
     packages = with pkgs; [
+      delta
+      git-absorb
       git-appraise # https://github.com/google/git-appraise
       git-bug # https://github.com/git-bug/git-bug
+      git-ignore
+      git-trim
       git-workspace # https://github.com/orf/git-workspace
       gitflow
-      gitAndTools.delta
-      gitAndTools.git-absorb
-      gitAndTools.git-appraise
-      gitAndTools.git-ignore
-      gitAndTools.git-trim
     ];
   };
 }
