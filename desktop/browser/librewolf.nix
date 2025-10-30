@@ -5,8 +5,6 @@
     librewolf = {
       enable = true;
 
-      package = pkgs.librewolf-wayland;
-
       # https://librewolf.net/docs/settings/
       # settings = {
       #   # "webgl.disabled" = false;
@@ -18,8 +16,6 @@
 
   home = {
     packages = with pkgs; [
-      librewolf-wayland
-
       kdePackages.plasma-browser-integration
     ]; # ..home.packages
   }; # ..home
