@@ -6,7 +6,7 @@
       duckdb
 
       # BROKEN: pgadmin
-      postgres-lsp
+      postgres-language-server
 
       sqlint
     ];
