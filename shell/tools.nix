@@ -178,9 +178,7 @@
 
       # Disk
       duf
-      ncdu
-      # du-dust
-      # dua
+      dua
 
       hyperfine
 
