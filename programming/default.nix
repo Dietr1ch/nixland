@@ -16,6 +16,7 @@
 
     ./constraint.nix
 
+    ./shell.nix
     ./web.nix
 
     ./json.nix
