@@ -42,6 +42,7 @@
 
           core = import ./core; # ./core/default.nix
           desktop = import ./desktop; # ./desktop/default.nix
+          desktop-editor-emacs-chemacs = import ./desktop/editor/emacs-chemacs.nix;
           desktop-hyprland = import ./desktop/hyprland.nix;
           gaming = import ./gaming; # ./gaming/default.nix
           gaming-emulators = import ./gaming/emulators.nix;
