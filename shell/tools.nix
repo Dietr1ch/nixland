@@ -48,10 +48,21 @@
       git = true;
     };
     # File printing
+    # https://home-manager-options.extranix.com/?release=master&query=programs.bat
     bat = {
       # ~/Code/github/Dietr1ch/home-manager/modules/programs/bat.nix
       # https://github.com/sharkdp/bat
       enable = true;
+
+      # Generates ~/.config/bat/config
+      config = {
+        map-syntax = [
+          "*.ino:C++"
+          ".ignore:Git Ignore"
+          "*.jenkinsfile:Groovy"
+          "*.props:Java Properties"
+        ];
+      };
     };
     # Selector
     skim = {
