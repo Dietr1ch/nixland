@@ -17,9 +17,6 @@
       interactiveShellInit = ''
         set fish_color_keyword "purple"
         set fish_color_option "brpurple"
-
-        # bind \cr 'fzy_select_history (commandline -b)'
-        # bind \cf 'fzy_select_directory'
       '';
 
       shellAliases = {
@@ -351,17 +348,6 @@
             repo = "pisces";
             rev = "e45e0869855d089ba1e628b6248434b2dfa709c4"; # master on 2022-06-30. Updated on 2020-11-30
             sha256 = "073wb83qcn0hfkywjcly64k6pf0d7z5nxxwls5sa80jdwchvd2rs";
-          };
-        }
-
-        # https://github.com/gyakovlev/fish-fzy
-        {
-          name = "fish-fzy";
-          src = pkgs.fetchFromGitHub {
-            owner = "gyakovlev";
-            repo = "fish-fzy";
-            rev = "1d5f9221b5a5a096e9282da1a3f1aac5bef01824";
-            sha256 = "0xx1np6f975v6ird9znplsnj4n0dnfw4ykha2848a6mglh4w40dm";
           };
         }
 
