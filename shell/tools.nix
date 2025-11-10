@@ -56,6 +56,9 @@
 
       # Generates ~/.config/bat/config
       config = {
+        # NOTE: Check `bat --list-themes`
+        theme = "Nord";
+
         map-syntax = [
           "*.ino:C++"
           ".ignore:Git Ignore"
