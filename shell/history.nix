@@ -3,6 +3,7 @@
 # https://github.com/cantino/mcfly
 {
   programs = {
+    # https://search.nixos.org/options?channel=unstable&show=programs.mcfly
     mcfly = {
       # ~/Code/github/Dietr1ch/home-manager/modules/programs/mcfly.nix
       enable = true;

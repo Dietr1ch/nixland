@@ -5,7 +5,7 @@
     ./autocomplete.nix
     ./fish.nix
     ./help.nix
-    # ./history.nix
+    # TODO: Add ./history.nix
     ./nushell.nix
     ./pager.nix
     ./prompt.nix
