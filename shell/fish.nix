@@ -157,7 +157,7 @@
                               | jq \
                                   --raw-output \
                                   'to_entries | map("\(.key | sub("'$package_root'"; "")): \(.value.description) \(.value.version)")[]' \
-                              | fzf \
+                              | sk \
                               | cut -d ":" -f 1)
 
             if test -n "$package"
@@ -180,7 +180,7 @@
           '';
         };
         "frg" = {
-          # function frg --description "rg tui built with fzf and bat"
+          # function frg --description "rg tui built with sk and bat"
           body = ''
             rg \
               --ignore-case \
@@ -188,7 +188,7 @@
               --line-number \
               --no-heading "$argv" \
                 | \
-              fzf \
+              sk \
                 --ansi \
                 --color 'hl:-1:underline,hl+:-1:underline:reverse' \
                 --delimiter ':' \
@@ -245,7 +245,7 @@
         };
         ",inspect_jsonl" = {
           body = ''
-            cat $argv | fzf --preview 'echo {} | jq --color-output .'
+            cat $argv | sk --preview 'echo {} | jq --color-output .'
           '';
         };
         ",last_dir" = {

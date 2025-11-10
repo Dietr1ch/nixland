@@ -8,7 +8,7 @@
 
       defaultFonts = {
         # How to check font-family:
-        # find /nix/var/nix/profiles/system/sw/share/X11/fonts/ -type l | fzf --preview 'fc-query {} | grep "^\\s\\+family:" | grep "^\\s\\+family:" | cut -d\'"\' -f2'
+        # find /nix/var/nix/profiles/system/sw/share/X11/fonts/ -type l | sk --preview 'fc-query {} | grep "^\\s\\+family:" | grep "^\\s\\+family:" | cut -d\'"\' -f2'
         serif = [
           "DejaVu Serif"
           "Liberation Serif"
