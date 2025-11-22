@@ -141,8 +141,8 @@
           "branch-name" = "rev-parse --abbrev-ref HEAD";
           "ls" = "!sh -c 'git ls-tree --name-only -r $(git branch-name)'";
 
-          "shallow-clone" = "clone --single-branch --shallow-since $(date --iso-8601 --date '-7 days')";
-          "commit-clone" = "clone --single-branch --depth 1";
+          "clone-shallow" = "clone --single-branch --shallow-since '7 days'";
+          "clone-commit" = "clone --single-branch --depth 1";
         };
       };
     };
