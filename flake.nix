@@ -45,6 +45,7 @@
           desktop-documents = import ./desktop/documents.nix;
           desktop-editor-emacs-chemacs = import ./desktop/editor/emacs-chemacs.nix;
           desktop-hyprland = import ./desktop/hyprland.nix;
+          desktop-video = import ./desktop/video/default.nix;
           gaming = import ./gaming; # ./gaming/default.nix
           gaming-emulators = import ./gaming/emulators.nix;
           gaming-wine = import ./gaming/wine.nix;
