@@ -35,7 +35,7 @@
       cargo-spellcheck
       cargo-toml-lint
       cargo-udeps
-      cargo-valgrind
+      # BROKEN: cargo-valgrind # https://github.com/NixOS/nixpkgs/issues/428375
       cargo-watch
 
       critcmp
