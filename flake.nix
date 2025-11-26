@@ -38,8 +38,6 @@
           import = path: path; # let the module system know what we are exporting
         in
         {
-          all = import ./all.nix;
-
           core = import ./core; # ./core/default.nix
           desktop = import ./desktop; # ./desktop/default.nix
           desktop-documents = import ./desktop/documents.nix;
