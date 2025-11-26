@@ -24,8 +24,6 @@
   outputs =
     inputs@{
       nixpkgs,
-      home-manager,
-      plasma-manager,
       ...
     }:
     {
