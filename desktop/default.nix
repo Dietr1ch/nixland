@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./browser # ./browser/default.nix
+    # ./browser # ./browser/default.nix
     ./communication # ./communication/default.nix
     ./diff # ./diff/default.nix
     ./editor # ./editor/default.nix

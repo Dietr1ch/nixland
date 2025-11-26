@@ -38,6 +38,7 @@
         {
           core = import ./core; # ./core/default.nix
           desktop = import ./desktop; # ./desktop/default.nix
+          desktop-browser = import ./desktop/browser/default.nix;
           desktop-browser-chromium = import ./desktop/browser/chromium.nix;
           desktop-browser-librewolf = import ./desktop/browser/librewolf.nix;
           desktop-browser-misc = import ./desktop/browser/misc.nix;

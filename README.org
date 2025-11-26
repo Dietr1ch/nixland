@@ -42,6 +42,7 @@ up work machines.
               # Nixland (https://github.com/Dietr1ch/nixland/)
               nixland.nixosModules.core  # https://github.com/Dietr1ch/nixland/tree/master/core/default.nix
               nixland.nixosModules.desktop  # https://github.com/Dietr1ch/nixland/tree/master/desktop/default.nix
+              nixland.nixosModules.desktop-browser  # https://github.com/Dietr1ch/nixland/tree/master/desktop/browser/default.nix
               nixland.nixosModules.gaming  # https://github.com/Dietr1ch/nixland/tree/master/gaming/default.nix
               nixland.nixosModules.gaming-emulators  # https://github.com/Dietr1ch/nixland/tree/master/gaming/emulators.nix
               # nixland.nixosModules.gaming-wine  # https://github.com/Dietr1ch/nixland/tree/master/gaming/wine.nix
