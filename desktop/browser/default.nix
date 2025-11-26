@@ -2,10 +2,9 @@
 
 {
   imports = [
-    ./chromium.nix
-    ./downloaders.nix
+    # ./chromium.nix
     ./librewolf.nix
-    ./lynx.nix
-    # BROKEN: ./qutebrowser.nix
+    ./misc.nix
+    # ./qutebrowser.nix
   ];
 }

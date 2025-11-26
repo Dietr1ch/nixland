@@ -38,6 +38,10 @@
         {
           core = import ./core; # ./core/default.nix
           desktop = import ./desktop; # ./desktop/default.nix
+          desktop-browser-chromium = import ./desktop/browser/chromium.nix;
+          desktop-browser-librewolf = import ./desktop/browser/librewolf.nix;
+          desktop-browser-misc = import ./desktop/browser/misc.nix;
+          desktop-browser-qutebrowser = import ./desktop/browser/qutebrowser.nix;
           desktop-documents = import ./desktop/documents.nix;
           desktop-editor-emacs-chemacs = import ./desktop/editor/emacs-chemacs.nix;
           desktop-hyprland = import ./desktop/hyprland.nix;
