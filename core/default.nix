@@ -2,9 +2,10 @@
 
 {
   imports = [
+    ./vcs # ./vcs/default.nix
+
     ./compression.nix
     ./env.nix
-    ./git.nix
     ./gpg.nix
     ./jujutsu.nix
     ./passwords.nix
