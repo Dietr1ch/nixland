@@ -6,6 +6,7 @@
       enable = true;
     };
 
+    # https://home-manager-options.extranix.com/?release=master&query=programs.git
     # ~/.config/git/
     # - ~/.config/git/config
     git = {
@@ -108,25 +109,43 @@
         enable = true;
       };
 
+      # https://git-scm.com/docs/git-config
       settings = {
         init = {
-          defaultBranch = "master";
+          defaultBranch = lib.mkDefault "master";
         };
         core = {
           whitespace = "trailing-space,space-before-tab";
         };
         url = {
-          # Codeberg: ssh://git@codeberg.org/{user}/{repo}.git
-          "ssh://git@codeberg.org/" = {
+          # Codeberg
+          "https://codeberg.org/" = {
             insteadOf = lib.mkDefault "cb:";
           };
-          # GitHub: git@github.com:{user}/{repo}.git
-          "git@github.com:" = {
+          "ssh://git@codeberg.org/" = {
+            pushInsteadOf = lib.mkDefault "cb:";
+          };
+
+          # GitHub
+          "https://github.com/" = {
             insteadOf = lib.mkDefault "gh:";
           };
-          # GitHub Gist: git@github.com:{user}/{repo}.git
-          "git@gist.github.com:" = {
+          "git@github.com:" = {
+            pushInsteadOf = lib.mkDefault "gh:";
+          };
+          "https://gist.github.com/" = {
             insteadOf = lib.mkDefault "gist:";
+          };
+          "git@gist.github.com:" = {
+            pushInsteadOf = lib.mkDefault "gist:";
+          };
+
+          # GitLab
+          "https://gitlab.com/" = {
+            insteadOf = lib.mkDefault "gl:";
+          };
+          "git@gitlab.com:" = {
+            pushInsteadOf = lib.mkDefault "gl:";
           };
         };
         pretty = {
