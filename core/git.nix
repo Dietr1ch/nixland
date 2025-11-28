@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 
 {
   programs = {
@@ -116,11 +116,13 @@
           whitespace = "trailing-space,space-before-tab";
         };
         url = {
+          # GitHub: git@github.com:{user}/{repo}.git
           "git@github.com:" = {
-            insteadOf = "gh:";
+            insteadOf = lib.mkDefault "gh:";
           };
+          # GitHub Gist: git@github.com:{user}/{repo}.git
           "git@gist.github.com:" = {
-            insteadOf = "gist:";
+            insteadOf = lib.mkDefault "gist:";
           };
         };
         pretty = {
