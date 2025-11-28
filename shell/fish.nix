@@ -160,7 +160,8 @@
             if test -n "$package"
               echo "Loading package '$package'"
               nix-shell \
-                -p $package \
+                --packages $package \
+                --command "fish" \
                 && return 0
               echo "Failed to load nix-shell -p '$package'."
               return 1
