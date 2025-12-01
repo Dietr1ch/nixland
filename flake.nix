@@ -51,6 +51,7 @@
           gaming-emulators = import ./gaming/emulators.nix;
           gaming-wine = import ./gaming/wine.nix;
           music = import ./music; # ./music/default.nix
+          music-cd = import ./music/cd.nix;
           music-guitar = import ./music/guitar.nix;
           networking = import ./networking; # ./networking/default.nix
           programming = import ./programming; # ./programming/default.nix
