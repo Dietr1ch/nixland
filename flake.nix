@@ -49,7 +49,6 @@
           desktop-video = import ./desktop/video/default.nix;
           gaming = import ./gaming; # ./gaming/default.nix
           gaming-emulators = import ./gaming/emulators.nix;
-          gaming-wine = import ./gaming/wine.nix;
           music = import ./music; # ./music/default.nix
           music-cd = import ./music/cd.nix;
           music-guitar = import ./music/guitar.nix;
