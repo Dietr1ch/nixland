@@ -1,4 +1,4 @@
-{ ... }:
+{ lib, ... }:
 
 {
   programs = {
@@ -85,4 +85,10 @@
       };
     }; # ..programs.helix
   }; # ..programs
+
+  home = {
+    sessionVariables = {
+      "ALTERNATE_EDITOR" = lib.mkDefault "hx";
+    };
+  };
 }
