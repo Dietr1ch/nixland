@@ -146,7 +146,7 @@
         "nx" = {
           body = ''
             set -l package_root "legacyPackages.x86_64-linux."
-            set -l package (nix search \
+            set -l packages (nix search \
                                 --offline \
                                 --json \
                                 nixpkgs \
@@ -155,15 +155,16 @@
                                   --raw-output \
                                   'to_entries | map("\(.key | sub("'$package_root'"; "")): \(.value.description) \(.value.version)")[]' \
                               | sk \
+                                --multi \
                               | cut -d ":" -f 1)
 
-            if test -n "$package"
-              echo "Loading package '$package'"
+            if test -n "$packages"
+              echo "Loading package '$packages'"
               nix-shell \
-                --packages $package \
+                --packages $packages \
                 --command "fish" \
                 && return 0
-              echo "Failed to load nix-shell -p '$package'."
+              echo "Failed to load nix-shell --packages '$packages'."
               return 1
             else
               echo "Cancelled."
