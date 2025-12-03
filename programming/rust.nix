@@ -2,8 +2,175 @@
 
 {
   programs = {
+    # https://home-manager-options.extranix.com/?release=master&query=programs.bacon
     bacon = {
       enable = true;
+
+      # https://dystroy.org/bacon/#global-preferences
+      # https://github.com/Canop/bacon
+      #
+      # Generates ~/.config/bacon/prefs.toml
+      settings = {
+        jobs = {
+          # bacon check
+          "check" = {
+            command = [
+              "cargo"
+              "check"
+            ];
+            need_stdout = false;
+          };
+          # bacon check-all
+          "check-all" = {
+            command = [
+              "cargo"
+              "check"
+              "--all-targets"
+            ];
+            need_stdout = false;
+          };
+
+          # bacon clippy
+          # Run clippy on the default target
+          "clippy" = {
+            command = [
+              "cargo"
+              "clippy"
+              "--fix"
+              "--allow-dirty"
+            ];
+            need_stdout = false;
+          };
+          # bacon clippy-all
+          # Run clippy on all targets
+          "clippy-all" = {
+            command = [
+              "cargo"
+              "clippy"
+              "--all-targets"
+              "--fix"
+              "--allow-dirty"
+            ];
+            need_stdout = false;
+          };
+
+          # bacon test
+          "test" = {
+            command = [
+              "cargo"
+              "test"
+            ];
+            need_stdout = true;
+          };
+          # bacon nextest
+          "nextest" = {
+            command = [
+              "cargo"
+              "nextest"
+              "run"
+
+              "--hide-progress-bar"
+              "--failure-output"
+              "final"
+            ];
+            need_stdout = true;
+            analyzer = "nextest";
+          };
+
+          # bacon doc
+          "doc" = {
+            command = [
+              "cargo"
+              "doc"
+              "--no-deps"
+            ];
+            need_stdout = false;
+          };
+          # bacon doc-open
+          "doc-open" = {
+            command = [
+              "cargo"
+              "doc"
+              "--no-deps"
+              "--open"
+            ];
+            need_stdout = false;
+            on_success = "back";
+          };
+
+          # bacon fmt
+          "fmt" = {
+            command = [
+              "cargo"
+              "fmt"
+            ];
+            need_stdout = false;
+          };
+
+          # bacon run -- $EXTRA_ARGS
+          "run" = {
+            command = [
+              "cargo"
+              "run"
+            ];
+            need_stdout = true;
+            allow_warnings = true;
+            background = true;
+          };
+          # bacon run-long -- $EXTRA_ARGS
+          "run-long" = {
+            command = [
+              "cargo"
+              "run"
+            ];
+            need_stdout = true;
+            allow_warnings = true;
+            background = false;
+            on_change_strategy = "kill_then_restart";
+          };
+
+          # bacon example -- $EXTRA_ARGS
+          "example" = {
+            command = [
+              "cargo"
+              "run"
+              "--example"
+            ];
+            need_stdout = true;
+            allow_warnings = true;
+          };
+        };
+      };
+    };
+
+    # https://home-manager-options.extranix.com/?release=master&query=programs.cargo
+    cargo = {
+      enable = true;
+
+      # https://doc.rust-lang.org/cargo/reference/config.html
+      settings = {
+        cache = {
+          auto-clean-frequency = "1 day";
+        };
+        cargo-new = {
+          vcs = "git";
+        };
+
+        # https://doc.rust-lang.org/nightly/cargo/guide/build-performance.html
+        profile = {
+          "dev" = {
+            debug = "line-tables-only";
+          };
+          "dev.package.\"*\"" = {
+            debug = false;
+          };
+          "debugging" = {
+            inherits = "dev";
+            debug = true;
+          };
+        };
+
+      };
     };
   };
 
@@ -15,6 +182,8 @@
       clippy
       rustfmt
       rust-script
+
+      mold
 
       cargo
       cargo-audit
