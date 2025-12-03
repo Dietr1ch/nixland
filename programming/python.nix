@@ -1,7 +1,40 @@
 { pkgs, ... }:
 
 {
+  programs = {
+    # https://home-manager-options.extranix.com/?release=master&query=programs.ruff
+    ruff = {
+      enable = true;
+
+      # https://docs.astral.sh/ruff/settings
+      settings = {
+        fix = true;
+
+        # https://docs.astral.sh/ruff/settings/#analyze
+        analyze = {
+          detect-string-imports = true;
+        };
+      };
+    };
+
+    # https://home-manager-options.extranix.com/?release=master&query=programs.matplotlib
+    matplotlib = {
+      enable = true;
+
+      # config = {
+      #   backend = "Qt5Agg";
+      #   axes = {
+      #     grid = true;
+      #     facecolor = "black";
+      #     edgecolor = "FF9900";
+      #   };
+      #   grid.color = "FF9900";
+      # };
+    };
+  };
+
   home = {
+
     packages = with pkgs; [
       python3
       python313Packages.ipython
