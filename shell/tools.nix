@@ -2,6 +2,13 @@
 
 {
   programs = {
+    # https://home-manager-options.extranix.com/?release=master&query=programs.parallel
+    parallel = {
+      enable = true;
+      package = pkgs.parallel-full;
+      will-cite = true;
+    };
+
     # File tools
     # ==========
     # File manager
@@ -166,7 +173,6 @@
   home = {
     packages = with pkgs; [
       gawk
-      parallel
 
       ## Finders
       fzf
