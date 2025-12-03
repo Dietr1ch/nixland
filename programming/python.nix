@@ -34,29 +34,35 @@
   };
 
   home = {
-
+    # Packages in sync with ~/Projects/systemn/desktop/programming/python.nix
     packages = with pkgs; [
-      python3
-      python313Packages.ipython
-      python313Packages.tqdm
-      python313Packages.types-tqdm
+      (pkgs.python313.withPackages (
+        ppkgs: with ppkgs; [
+          ipython
 
-      python313Packages.pandas
-      # BROKEN: python313Packages.pandas-stubs
-      python313Packages.xlrd # Excel
+          tqdm
+          types-tqdm
 
-      python313Packages.polars
-      python313Packages.altair
-      python313Packages.vega
-      # TODO Add python313Packages.vl-convert
+          numpy
+          scipy
+          tensorflow
 
-      python313Packages.numpy
-      python313Packages.scipy
-      python313Packages.traittypes
+          pandas
+          pandas-stubs
 
-      python313Packages.matplotlib
+          polars
+          altair
+          vega
+          vl-convert-python
 
-      python313Packages.requests
+          traittypes
+
+          matplotlib
+
+          requests
+          xlrd
+        ]
+      ))
 
       # Tools
       ruff # Lint, Formatter

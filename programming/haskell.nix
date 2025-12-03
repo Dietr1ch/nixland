@@ -2,6 +2,7 @@
 
 {
   home = {
+    # Packages in sync with ~/Projects/systemn/desktop/programming/haskell.nix
     packages = with pkgs; [ ghc ];
 
     file = {

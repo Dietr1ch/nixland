@@ -8,6 +8,7 @@
   };
 
   home = {
+    # Packages in sync with ~/Projects/systemn/desktop/programming/rust.nix
     packages = with pkgs; [
       rustc
       rust-analyzer
