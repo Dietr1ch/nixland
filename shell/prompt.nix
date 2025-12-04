@@ -2,9 +2,11 @@
 
 {
   programs = {
+    # ~/Projects/home-manager/modules/programs/starship.nix
+    # In sync with ~/Projects/systemn/desktop/shell/terminal/prompt.nix
     starship = {
       enable = true;
-      # ~/Code/github/Dietr1ch/home-manager/modules/programs/starship.nix
+
       # https://starship.rs/config
       settings = {
         add_newline = true;
