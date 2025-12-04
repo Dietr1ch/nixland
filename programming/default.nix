@@ -15,6 +15,8 @@
     ./build.nix
     ./devenv.nix
 
+    ./rpc.nix
+
     ./constraint.nix
 
     ./shell.nix
