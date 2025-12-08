@@ -6,7 +6,7 @@
     # https://atuin.sh/
     # https://github.com/atuinsh/atuin
     atuin = {
-      # ~/Code/github/Dietr1ch/home-manager/modules/programs/atuin.nix
+      # ~/Projects/home-manager/modules/programs/atuin.nix
       enable = true;
 
       enableFishIntegration = true;

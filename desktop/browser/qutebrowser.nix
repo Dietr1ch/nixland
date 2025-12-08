@@ -67,7 +67,7 @@
         "nw" = "https://wiki.nixos.org/index.php?search={}";
       };
       extraConfig = ''
-        # See ~/Code/github/Dietr1ch/nixland/desktop/browser/qutebrowser.nix
+        # See ~/Projects/nixland/desktop/browser/qutebrowser.nix
         # See ~/.config/home-manager/home/browsers.nix
         # programs.qutebrowser.extraConfig:
       '';

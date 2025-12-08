@@ -100,8 +100,8 @@
   };
 
   services = {
-    # ~/Code/github/Dietr1ch/home-manager/modules/services/mpd.nix
-    # ~/Code/github/Dietr1ch/nixpkgs/pkgs/servers/mpd/default.nix
+    # ~/Projects/home-manager/modules/services/mpd.nix
+    # ~/Projects/nixpkgs/pkgs/servers/mpd/default.nix
     mpd = {
       enable = true;
 
@@ -112,7 +112,7 @@
       # https://github.com/MusicPlayerDaemon/MPD/tree/master/doc/mpdconf.example
       # https://wiki.archlinux.org/title/Music_Player_Daemon#Audio_configuration
       extraConfig = ''
-        # extraConfig from ~/Code/github/Dietr1ch/nixland/music/mpd.nix
+        # extraConfig from ~/Projects/nixland/music/mpd.nix
         audio_output {
           type  "pipewire"
           name  "PipeWire Sound Server"
@@ -123,7 +123,7 @@
       '';
     }; # ..services.mpd
 
-    # ~/Code/github/Dietr1ch/home-manager/modules/services/mpdris2.nix
+    # ~/Projects/home-manager/modules/services/mpdris2.nix
     mpdris2 = {
       enable = true;
 

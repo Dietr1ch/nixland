@@ -13,7 +13,7 @@
 
   programs = {
     jq = {
-      # ~/Code/github/Dietr1ch/home-manager/modules/programs/jq.nix
+      # ~/Projects/home-manager/modules/programs/jq.nix
       # https://github.com/jqlang/jq
       enable = true;
     };

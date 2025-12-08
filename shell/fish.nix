@@ -5,7 +5,7 @@
     fish = {
       # ~/.config/fish/config.fish
       # ~/.config/fish/conf.d/
-      # ~/Code/github/Dietr1ch/home-manager/modules/programs/fish.nix
+      # ~/Projects/home-manager/modules/programs/fish.nix
       enable = true;
 
       shellInit = '''';

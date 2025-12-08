@@ -6,7 +6,7 @@
       # https://home-manager-options.extranix.com/?release=master&query=alacritty
       # https://github.com/alacritty/alacritty
       # https://alacritty.org/
-      # ~/Code/github/Dietr1ch/home-manager/modules/programs/alacritty.nix
+      # ~/Projects/home-manager/modules/programs/alacritty.nix
       enable = true;
 
       # https://alacritty.org/config-alacritty.html

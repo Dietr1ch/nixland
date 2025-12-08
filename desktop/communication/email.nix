@@ -48,7 +48,7 @@
   # };
 
   programs = {
-    # ~/Code/github/Dietr1ch/home-manager/modules/programs/himalaya.nix
+    # ~/Projects/home-manager/modules/programs/himalaya.nix
     himalaya = {
       enable = true;
 

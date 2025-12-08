@@ -8,7 +8,7 @@ in
   programs = {
     zellij = {
       # https://github.com/nix-community/home-manager/blob/master/modules/programs/zellij.nix
-      # ~/Code/github/Dietr1ch/home-manager/modules/programs/zellij.nix
+      # ~/Projects/home-manager/modules/programs/zellij.nix
       enable = true;
 
       # New settings from https://github.com/nix-community/home-manager/pull/6037

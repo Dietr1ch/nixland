@@ -6,7 +6,7 @@
     nushell = {
       # ~/.config/fish/config.fish
       # ~/.config/fish/conf.d/
-      # ~/Code/github/Dietr1ch/home-manager/modules/programs/fish.nix
+      # ~/Projects/home-manager/modules/programs/fish.nix
       enable = true;
 
       # https://home-manager-options.extranix.com/?release=master&query=programs.nushell.shellAliases

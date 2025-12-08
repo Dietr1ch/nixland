@@ -2,7 +2,7 @@
 
 {
   programs = {
-    # ~/Code/github/Dietr1ch/home-manager/modules/programs/mangohud.nix
+    # ~/Projects/home-manager/modules/programs/mangohud.nix
     mangohud = {
       enable = true;
 

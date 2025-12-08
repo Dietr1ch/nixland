@@ -5,13 +5,13 @@
     nix-index.enable = true;
 
     man = {
-      # ~/Code/github/Dietr1ch/home-manager/modules/programs/man.nix
+      # ~/Projects/home-manager/modules/programs/man.nix
       enable = true;
       # Index man pages (Used by apropos)
       generateCaches = true;
     }; # ..programs.man
     tealdeer = {
-      # ~/Code/github/Dietr1ch/home-manager/modules/programs/tealdeer.nix
+      # ~/Projects/home-manager/modules/programs/tealdeer.nix
       # https://github.com/tealdeer-rs/tealdeer
       enable = true;
       settings = {

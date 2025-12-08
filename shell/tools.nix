@@ -13,18 +13,18 @@
     # ==========
     # File manager
     yazi = {
-      # ~/Code/github/Dietr1ch/home-manager/modules/programs/yazi.nix
+      # ~/Projects/home-manager/modules/programs/yazi.nix
       # https://github.com/sxyazi/yazi
       enable = true;
     };
     # File finding
     broot = {
-      # ~/Code/github/Dietr1ch/home-manager/modules/programs/broot.nix
+      # ~/Projects/home-manager/modules/programs/broot.nix
       # https://github.com/Canop/broot
       enable = true;
     };
     fd = {
-      # ~/Code/github/Dietr1ch/home-manager/modules/programs/fd.nix
+      # ~/Projects/home-manager/modules/programs/fd.nix
       # https://github.com/sharkdp/fd
       enable = true;
       ignores = [
@@ -36,7 +36,7 @@
     };
     # File searching
     ripgrep = {
-      # ~/Code/github/Dietr1ch/home-manager/modules/programs/ripgrep.nix
+      # ~/Projects/home-manager/modules/programs/ripgrep.nix
       # https://github.com/BurntSushi/ripgrep
       enable = true;
 
@@ -47,7 +47,7 @@
     };
     # Directory listing
     eza = {
-      # ~/Code/github/Dietr1ch/home-manager/modules/programs/eza.nix
+      # ~/Projects/home-manager/modules/programs/eza.nix
       # https://github.com/eza-community/eza
       # https://eza.rocks
       enable = true;
@@ -57,7 +57,7 @@
     # File printing
     # https://home-manager-options.extranix.com/?release=master&query=programs.bat
     bat = {
-      # ~/Code/github/Dietr1ch/home-manager/modules/programs/bat.nix
+      # ~/Projects/home-manager/modules/programs/bat.nix
       # https://github.com/sharkdp/bat
       enable = true;
 
@@ -76,7 +76,7 @@
     };
     # Selector
     skim = {
-      # ~/Code/github/Dietr1ch/home-manager/modules/programs/skim.nix
+      # ~/Projects/home-manager/modules/programs/skim.nix
       # https://github.com/skim-rs/skim
       enable = true;
 

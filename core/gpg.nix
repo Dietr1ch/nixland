@@ -3,8 +3,8 @@
 {
   programs = {
     # https://home-manager-options.extranix.com/?release=master&query=programs.gpg
-    # ~/Code/github/Dietr1ch/home-manager/modules/programs/gpg.nix
-    # ~/Code/github/Dietr1ch/nixpkgs/nixos/modules/programs/gnupg.nix
+    # ~/Projects/home-manager/modules/programs/gpg.nix
+    # ~/Projects/nixpkgs/nixos/modules/programs/gnupg.nix
     gpg = {
       enable = true;
 
