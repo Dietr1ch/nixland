@@ -173,6 +173,17 @@
           '';
         };
 
+        ",system_logs" = {
+          body = ''
+            sudo --validate && sudo journalctl --no-hostname --boot '0' --follow $argv | lnav
+          '';
+        };
+        ",user_logs" = {
+          body = ''
+            journalctl --no-hostname --boot '0' --user --follow $argv | lnav
+          '';
+        };
+
         "hgrep" = {
           body = ''
             gawk 'NR==1 || /$argv[1]/' $argv[2..]
