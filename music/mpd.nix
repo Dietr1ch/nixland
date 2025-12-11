@@ -123,6 +123,8 @@
       '';
     }; # ..services.mpd
 
+    # https://home-manager-options.extranix.com/?release=master&query=services.mpdris2
+    # ~/Projects/nixland/music/mpd.nix
     # ~/Projects/home-manager/modules/services/mpdris2.nix
     mpdris2 = {
       enable = true;
