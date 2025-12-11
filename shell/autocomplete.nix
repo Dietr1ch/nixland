@@ -1,4 +1,4 @@
-{ ... }:
+{ config, ... }:
 
 {
   programs = {
@@ -27,7 +27,7 @@
     file = {
 
       # NOTE: Needed because of package management misinference (https://codeberg.org/iff/pay-respects/issues/34)
-      "~/.config/pay-respects/config.toml" = {
+      "${config.home.homeDirectory}/.config/pay-respects/config.toml" = {
         text = ''
           # Maximum time in milliseconds for getting previous output
           timeout = 3000
