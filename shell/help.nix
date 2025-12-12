@@ -12,12 +12,15 @@
       enableZshIntegration = true;
     };
 
+    # https://home-manager-options.extranix.com/?release=master&query=programs.man
     man = {
       # ~/Projects/home-manager/modules/programs/man.nix
       enable = true;
       # Index man pages (Used by apropos)
       generateCaches = true;
     }; # ..programs.man
+
+    # https://home-manager-options.extranix.com/?release=master&query=programs.tealdeer
     tealdeer = {
       # ~/Projects/home-manager/modules/programs/tealdeer.nix
       # https://github.com/tealdeer-rs/tealdeer
