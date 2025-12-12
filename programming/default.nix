@@ -13,6 +13,7 @@
     ./nix.nix
 
     ./build.nix
+    ./debugging.nix
     ./devenv.nix
 
     ./rpc.nix

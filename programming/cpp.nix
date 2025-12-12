@@ -6,7 +6,6 @@
     # Packages in sync with ~/Projects/systemn/desktop/programming/cpp.nix
     packages = with pkgs; [
       gcc
-      gdb
     ]; # ..home.packages
   }; # ..home
 
