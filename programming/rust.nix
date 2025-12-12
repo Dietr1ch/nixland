@@ -183,8 +183,6 @@
       rustfmt
       rust-script
 
-      mold
-
       cargo
       cargo-audit
       cargo-benchcmp
