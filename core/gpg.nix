@@ -9,7 +9,6 @@
       enable = true;
 
       # Settings (~/.gnupg/gpg.conf)
-      # https://home-manager-options.extranix.com/?release=master&query=programs.gpg.settings
       #
       # https://www.gnupg.org/documentation/manuals/gnupg/OpenPGP-Options.html
       # Use `gpg --version` to list available algorithms
@@ -70,4 +69,3 @@
     ];
   };
 }
-
