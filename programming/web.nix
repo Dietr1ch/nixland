@@ -8,6 +8,8 @@
 
       vscode-langservers-extracted
       prettier
+
+      wasm-pack
     ]; # ..home.packages
   }; # ..home
 }
