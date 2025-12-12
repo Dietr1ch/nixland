@@ -21,6 +21,16 @@
       enableNushellIntegration = true;
       enableZshIntegration = true;
     }; # ..programs.carapace
+
+    # https://home-manager-options.extranix.com/?release=master&query=programs.zoxide
+    zoxide = {
+      enable = true;
+
+      enableBashIntegration = true;
+      enableFishIntegration = true;
+      enableNushellIntegration = true;
+      enableZshIntegration = true;
+    }; # ..programs.zoxide
   }; # ..programs
 
   home = {
