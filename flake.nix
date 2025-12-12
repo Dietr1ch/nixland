@@ -22,7 +22,7 @@
   };
 
   outputs =
-    inputs@{
+    {
       nixpkgs,
       ...
     }:
