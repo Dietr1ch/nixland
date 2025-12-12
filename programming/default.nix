@@ -2,13 +2,15 @@
 
 {
   imports = [
+    # ./c.nix
+    # ./cpp.nix
+    # ./haskell.nix
+    # ./python.nix
+    # ./rust.nix
+    # ./sql.nix
+    # ./web.nix
+
     ./asp.nix
-    ./c.nix
-    ./cpp.nix
-    ./haskell.nix
-    ./python.nix
-    ./rust.nix
-    ./sql.nix
 
     ./nix.nix
 
@@ -21,7 +23,6 @@
     ./constraint.nix
 
     ./shell.nix
-    ./web.nix
 
     ./json.nix
     ./xml.nix

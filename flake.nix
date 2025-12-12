@@ -37,6 +37,7 @@
         in
         {
           core = import ./core; # ./core/default.nix
+
           desktop = import ./desktop; # ./desktop/default.nix
           desktop-browser = import ./desktop/browser/default.nix;
           desktop-browser-chromium = import ./desktop/browser/chromium.nix;
@@ -47,13 +48,25 @@
           desktop-editor-emacs-chemacs = import ./desktop/editor/emacs-chemacs.nix;
           desktop-hyprland = import ./desktop/hyprland.nix;
           desktop-video = import ./desktop/video/default.nix;
+
           gaming = import ./gaming; # ./gaming/default.nix
           gaming-emulators = import ./gaming/emulators.nix;
+
           music = import ./music; # ./music/default.nix
           music-cd = import ./music/cd.nix;
           music-guitar = import ./music/guitar.nix;
+
           networking = import ./networking; # ./networking/default.nix
+
           programming = import ./programming; # ./programming/default.nix
+          programming-c = import ./programming/c.nix;
+          programming-cpp = import ./programming/cpp.nix;
+          programming-haskell = import ./programming/haskell.nix;
+          programming-python = import ./programming/python.nix;
+          programming-rust = import ./programming/rust.nix;
+          programming-sql = import ./programming/sql.nix;
+          programming-web = import ./programming/web.nix;
+
           shell = import ./shell; # ./shell/default.nix
         };
     };
