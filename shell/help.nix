@@ -2,7 +2,15 @@
 
 {
   programs = {
-    nix-index.enable = true;
+    # https://home-manager-options.extranix.com/?release=master&query=programs.nix-index
+    nix-index = {
+      enable = true;
+
+      enableBashIntegration = true;
+      enableFishIntegration = true;
+      enableNushellIntegration = true;
+      enableZshIntegration = true;
+    };
 
     man = {
       # ~/Projects/home-manager/modules/programs/man.nix
