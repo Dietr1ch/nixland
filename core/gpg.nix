@@ -1,4 +1,4 @@
-{ lib, pkgs, ... }:
+{ pkgs, lib, ... }:
 
 {
   programs = {
@@ -17,6 +17,8 @@
       # https://www.owlfolio.org/possibly-useful/readonly-gpg2/
       # https://github.com/drduh/config/blob/master/gpg.conf
       settings = {
+        pinentry-program = "${pkgs.pinentry-qt}/bin/pinentry-qt";
+
         # https://discourse.nixos.org/t/how-to-full-git-setup-in-home-manager-or-else/24861/23
         # NOTE: DO override. (Single point of failure. Make sure to use hkps)
         keyserver = lib.mkDefault "hkps://keys.openpgp.org";
