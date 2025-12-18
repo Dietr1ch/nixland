@@ -40,28 +40,41 @@
         ppkgs: with ppkgs; [
           ipython
 
+          # Tools
+          ## Progress bar
           tqdm
           types-tqdm
+          ## Type defs
+          traittypes
 
+          # Libraries
+          ## Plotting
+          matplotlib
+          ## Numeric
           numpy
           scipy
           tensorflow
-
+          ## Pandas
           pandas
           pandas-stubs
-
+          ## Polars (https://docs.pola.rs/user-guide/installation/)
           polars
           altair
           vega
           vl-convert-python
 
-          traittypes
-
-          matplotlib
-
+          # HTTP
           requests
+
+          # Data
+          pyarrow
+          pydantic
+          ## Excel
+          fastexcel
+          openpyxl
           xlrd
 
+          # Solvers
           z3-solver
         ]
       ))
@@ -69,6 +82,9 @@
       # Tools
       ruff # Lint, Formatter
       pylyzer # LSP
+
+      # Solvers
+      z3
     ]; # ..home.packages
   }; # ..home
 }
