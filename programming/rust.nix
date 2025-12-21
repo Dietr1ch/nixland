@@ -208,6 +208,7 @@
 
       critcmp
 
+      just-lsp
       ron-lsp
     ]; # ..home.packages
 
