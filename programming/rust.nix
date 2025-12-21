@@ -207,6 +207,8 @@
       cargo-watch
 
       critcmp
+
+      ron-lsp
     ]; # ..home.packages
 
     file = {
