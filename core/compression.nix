@@ -5,12 +5,18 @@
     packages = with pkgs; [
       # Extract
       kdePackages.ark
+
+      # In sync with ~/Projects/systemn/system/files/compression.nix
+      arj
       brotli
       lbzip2
-      xz
-
-      zip
+      lrzip
+      pbzip2
+      pigz
+      pixz
       unzip
+      xz
+      zip
     ];
   };
 }

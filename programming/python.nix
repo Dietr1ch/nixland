@@ -88,7 +88,7 @@
 
       # Solvers
       clingo
-      clingocon
+      clingcon
       z3
     ]; # ..home.packages
   }; # ..home
