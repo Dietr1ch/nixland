@@ -2,7 +2,10 @@
 
 {
   home = {
-    packages = with pkgs; [ clingo ];
+    packages = with pkgs; [
+      clingo
+      clingcon
+    ];
   }; # ..home
 
 }
