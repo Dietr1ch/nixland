@@ -77,6 +77,7 @@
           xlrd
 
           # Solvers
+          clingo
           z3-solver
         ]
       ))
@@ -86,6 +87,8 @@
       pylyzer # LSP
 
       # Solvers
+      clingo
+      clingocon
       z3
     ]; # ..home.packages
   }; # ..home
