@@ -13,7 +13,7 @@
       trippy
       bandwhich
       dig
-      dogdns
+      dogedns
 
       # Downloaders
       aria2
