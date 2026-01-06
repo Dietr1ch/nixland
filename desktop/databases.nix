@@ -8,7 +8,7 @@
       # BROKEN: pgadmin
       postgres-language-server
 
-      sqlint
+      # BROKEN: sqlint
     ];
   };
 }
