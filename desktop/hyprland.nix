@@ -21,10 +21,6 @@ in
         # The hyprland package to use
         package = pkgs.hyprland;
 
-        xwayland = {
-          enable = lib.mkDefault false;
-        };
-
         # https://wiki.hyprland.org/Nix/Hyprland-on-Home-Manager/
         # https://wiki.hyprland.org/Nix/Plugins/
         plugins = with pkgs.hyprlandPlugins; [
@@ -46,6 +42,10 @@ in
         # -------------
         # https://wiki.hypr.land/Configuring/
         settings = {
+          xwayland = {
+            enable = lib.mkDefault false;
+          };
+
           source = [
             "~/.config/hypr/live.conf"
 
