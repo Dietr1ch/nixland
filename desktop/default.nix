@@ -14,7 +14,6 @@
     # ./documents.nix
     ./fonts.nix
     ./passwords.nix
-    ./phone.nix
     ./screenshots.nix
     ./sync.nix
     ./tools.nix
