@@ -13,10 +13,11 @@
 
       # Themes:
       #   fish_config theme show
-      # fish_config theme choose "fish default"
       interactiveShellInit = ''
-        set fish_color_keyword "purple"
-        set fish_color_option "brpurple"
+        fish_config theme choose "Nord"
+
+        # Make the command standout
+        set fish_color_command $fish_color_command --bold
       '';
 
       shellAliases = {
