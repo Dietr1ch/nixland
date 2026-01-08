@@ -21,9 +21,5 @@
         };
       };
     }; # ..programs.direnv
-
-    mise = {
-      enable = true;
-    }; # ..programs.mise
-  };
+  }; # ..programs
 }
