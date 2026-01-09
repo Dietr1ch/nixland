@@ -7,7 +7,6 @@
     # ./emulators.nix
     ./mangohud.nix
     ./obs.nix
-    ./revolt.nix
     ./sdl.nix
   ];
 
