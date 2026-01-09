@@ -213,7 +213,6 @@
 
       # System
       # ------
-      kdePackages.partitionmanager
       nix-tree
     ];
   };
