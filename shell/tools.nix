@@ -93,6 +93,15 @@
       # fileWidgetOptions = [];
     }; # ..programs.skim
 
+
+    # JSON
+    jq = {
+      enable = true;
+    };
+    jqp = {
+      enable = true;
+    };
+
     fastfetch = {
       enable = true;
 
