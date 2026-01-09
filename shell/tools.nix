@@ -183,10 +183,6 @@
     packages = with pkgs; [
       gawk
 
-      ## Finders
-      fzf
-      fzy
-
       ## Viewers
       hexyl
       lnav
