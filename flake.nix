@@ -66,6 +66,7 @@
           programming-rust = import ./programming/rust.nix;
           programming-sql = import ./programming/sql.nix;
           programming-web = import ./programming/web.nix;
+          programming-zig = import ./programming/zig.nix;
 
           shell = import ./shell; # ./shell/default.nix
         };

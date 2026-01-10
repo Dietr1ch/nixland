@@ -9,6 +9,7 @@
     # ./rust.nix
     # ./sql.nix
     # ./web.nix
+    # ./zig.nix
 
     ./asp.nix
 
