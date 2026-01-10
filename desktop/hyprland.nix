@@ -1,10 +1,6 @@
 { pkgs, lib, ... }:
 
 # ~/.config/hypr/hyprland.conf
-let
-  # https://wiki.hypr.land/Configuring/Performance/#how-do-i-make-hyprland-draw-as-little-power-as-possible-on-my-laptop
-  high_perf = true;
-in
 {
   home = {
     packages = with pkgs; [
@@ -81,7 +77,7 @@ in
             resize_on_border = false;
 
             # Please see https://wiki.hyprland.org/Configuring/Tearing/ before you turn this on
-            allow_tearing = high_perf;
+            allow_tearing = lib.mkDefault true;
 
             layout = "dwindle";
           };
@@ -95,14 +91,14 @@ in
 
             # https://wiki.hyprland.org/Configuring/Variables/#blur
             blur = {
-              enabled = !high_perf;
+              enabled = lib.mkDefault false;
               size = 3;
               passes = 1;
 
               vibrancy = 0.1696;
             };
             shadow = {
-              enabled = !high_perf;
+              enabled = lib.mkDefault false;
             };
           };
           # https://wiki.hyprland.org/Configuring/Variables/#animations
@@ -130,7 +126,7 @@ in
 
           # https://wiki.hypr.land/Configuring/Variables/#misc
           misc = {
-            vfr = high_perf;
+            vfr = lib.mkDefault true;
             force_default_wallpaper = 1; # Set to 0 or 1 to disable the anime mascot wallpapers
 
             disable_hyprland_logo = true;
