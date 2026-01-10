@@ -300,7 +300,8 @@ in
         };
 
         extraConfig = ''
-          # extraConfig
+          # nixland - extraConfig
+          # ---------------------
         '';
 
       };
