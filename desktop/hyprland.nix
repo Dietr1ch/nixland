@@ -283,7 +283,7 @@ in
           windowrule = [
             # "float, ^(kitty)$"
             # "suppressevent maximize, class:.*" # You'll probably like this.
-            "immediate, class:^(cs2)$" # Allow tearing in CS2
+            # "immediate, class:^(cs2)$" # Allow tearing in CS2
           ];
 
           plugin = {
