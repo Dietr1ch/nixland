@@ -28,6 +28,7 @@ in
           borders-plus-plus
           hyprbars
           hyprexpo
+          csgo-vulkan-fix
         ];
         # ] ++ (with inputs.hyprkool.packages.${pkgs.system}; [
         #   hyprkool-plugin
