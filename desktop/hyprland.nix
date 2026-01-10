@@ -26,8 +26,8 @@ in
         # https://wiki.hyprland.org/Nix/Plugins/
         plugins = with pkgs.hyprlandPlugins; [
           borders-plus-plus
-          hyprbars
-          hyprexpo
+          hyprbars # Windows decorations
+          hyprexpo # Exposé
           csgo-vulkan-fix
         ];
         # ] ++ (with inputs.hyprkool.packages.${pkgs.system}; [
@@ -207,7 +207,7 @@ in
 
             "$mod, D, killactive,"
             "$mod, M, togglefloating,"
-            "$mod, P, pseudo," # dwindle
+            "$mod, P, pseudo," # dwindle pseudotile
             "$mod, code:45, togglesplit," # - dwindle
             "$mod, F, fullscreen"
 
