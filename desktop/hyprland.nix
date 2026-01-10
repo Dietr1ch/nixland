@@ -1,5 +1,6 @@
 { pkgs, lib, ... }:
 
+# ~/.config/hypr/hyprland.conf
 let
   # https://wiki.hypr.land/Configuring/Performance/#how-do-i-make-hyprland-draw-as-little-power-as-possible-on-my-laptop
   high_perf = true;
@@ -285,7 +286,7 @@ in
           # See https://wiki.hyprland.org/Configuring/Workspace-Rules/ for workspace rules
           windowrule = [
             # "float, ^(kitty)$"
-            "suppressevent maximize, class:.*" # You'll probably like this.
+            # "suppressevent maximize, class:.*" # You'll probably like this.
             "immediate, class:^(cs2)$" # Allow tearing in CS2
           ];
 
