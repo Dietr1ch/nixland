@@ -43,10 +43,6 @@ in
         # -------------
         # https://wiki.hypr.land/Configuring/
         settings = {
-          xwayland = {
-            enable = lib.mkDefault false;
-          };
-
           source = [
             "~/.config/hypr/live.conf"
 
