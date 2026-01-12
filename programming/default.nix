@@ -22,6 +22,7 @@
     ./rpc.nix
 
     ./constraint.nix
+    ./grammars.nix
 
     ./shell.nix
 
