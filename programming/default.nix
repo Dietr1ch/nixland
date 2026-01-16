@@ -31,7 +31,11 @@
   ];
 
   home = {
-    packages = with pkgs; [ tokei ];
+    # Packages in sync with ~/Projects/systemn/desktop/programming/default.nix
+    packages = with pkgs; [
+      # Tools
+      tokei
+    ];
 
     file = {
 
