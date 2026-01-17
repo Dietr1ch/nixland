@@ -24,7 +24,7 @@
           borders-plus-plus
           hyprbars # Windows decorations
           hyprexpo # Exposé
-          csgo-vulkan-fix
+          # BROKEN: csgo-vulkan-fix
         ];
         # ] ++ (with inputs.hyprkool.packages.${pkgs.system}; [
         #   hyprkool-plugin
