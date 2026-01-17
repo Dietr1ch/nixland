@@ -23,7 +23,7 @@
         plugins = with pkgs.hyprlandPlugins; [
           borders-plus-plus
           hyprbars # Windows decorations
-          hyprexpo # Exposé
+          # BROKEN: hyprexpo # Exposé
           # BROKEN: csgo-vulkan-fix
         ];
         # ] ++ (with inputs.hyprkool.packages.${pkgs.system}; [
