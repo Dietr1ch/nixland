@@ -71,6 +71,8 @@
           # Data
           pyarrow
           pydantic
+          ## DuckDB
+          duckdb
           ## Excel
           fastexcel
           openpyxl
