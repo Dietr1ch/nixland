@@ -20,12 +20,12 @@
 
         # https://wiki.hyprland.org/Nix/Hyprland-on-Home-Manager/
         # https://wiki.hyprland.org/Nix/Plugins/
-        plugins = with pkgs.hyprlandPlugins; [
-          borders-plus-plus
-          hyprbars # Windows decorations
-          # BROKEN: hyprexpo # Exposé
-          # BROKEN: csgo-vulkan-fix
-        ];
+        # plugins = with pkgs.hyprlandPlugins; [
+        #   BROKEN borders-plus-plus
+        #   BROKEN: hyprbars # Windows decorations
+        #   BROKEN: hyprexpo # Exposé
+        #   BROKEN: csgo-vulkan-fix
+        # ];
         # ] ++ (with inputs.hyprkool.packages.${pkgs.system}; [
         #   hyprkool-plugin
         # ]);
