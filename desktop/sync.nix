@@ -1,4 +1,4 @@
-{ ... }:
+{ lib, ... }:
 
 {
   services = {
@@ -7,7 +7,7 @@
       enable = true;
 
       # https://www.freedesktop.org/software/systemd/man/latest/systemd.unit.html#Specifiers
-      guiAddress = "%t/%N.socket";
+      guiAddress = lib.mkDefault "%t/%N.socket";
     };
   };
 }
