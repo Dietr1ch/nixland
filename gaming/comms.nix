@@ -2,8 +2,9 @@
 
 {
   home = {
+    # In Sync with ~/Projects/systemn/desktop/gaming/comms.nix
     packages = with pkgs; [
-      vesktop
+      revolt-desktop
     ];
   };
 }
