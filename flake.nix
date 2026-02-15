@@ -50,6 +50,7 @@
           desktop-video = import ./desktop/video/default.nix;
 
           gaming = import ./gaming; # ./gaming/default.nix
+          gaming-comms = import ./gaming/comms.nix;
           gaming-emulators = import ./gaming/emulators.nix;
 
           music = import ./music; # ./music/default.nix
