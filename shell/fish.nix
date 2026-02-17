@@ -364,18 +364,6 @@
             sha256 = "073wb83qcn0hfkywjcly64k6pf0d7z5nxxwls5sa80jdwchvd2rs";
           };
         }
-
-        # https://github.com/b4b4r07/enhancd
-        # NOTE: enhancd needs non-fish files from  lib/ and src/ too
-        # {
-        #   name = "enhancd";
-        #   src = pkgs.fetchFromGitHub {
-        #     owner = "b4b4r07";
-        #     repo = "enhancd";
-        #     rev = "f0f894029d12eecdc36c212fa3ad14f55468d1b7";
-        #     sha256 = "1qk2fa33jn4j3xxaljmm11d6rbng6d5gglrhwavb72jib4vmkwyb";
-        #   };
-        # }
       ]; # ..programs.fish.plugins
     }; # ..programs.fish
   }; # ..programs
