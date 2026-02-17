@@ -70,6 +70,7 @@
           programming-zig = import ./programming/zig.nix;
 
           shell = import ./shell; # ./shell/default.nix
+          shell-history-atuin = import ./shell/history/atuin.nix;
         };
     };
 }
