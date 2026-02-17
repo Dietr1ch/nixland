@@ -12,4 +12,9 @@
     ./ssh.nix
     ./tracing.nix
   ];
+
+  # https://home-manager-options.extranix.com/?release=master&query=xdg
+  xdg = {
+    enable = true;
+  };
 }
