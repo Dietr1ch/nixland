@@ -8,8 +8,8 @@
       # ~/Projects/home-manager/modules/programs/fish.nix
       enable = true;
 
-      shellInit = '''';
-      loginShellInit = '''';
+      shellInit = "";
+      loginShellInit = "";
 
       # Themes:
       #   fish_config theme show
