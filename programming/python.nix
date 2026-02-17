@@ -68,6 +68,9 @@
           # HTTP
           requests
 
+          # AI
+          anthropic
+
           # Data
           pyarrow
           pydantic
