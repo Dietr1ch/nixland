@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
   programs = {
@@ -95,5 +95,9 @@
       clingcon
       z3
     ]; # ..home.packages
+
+    sessionVariables = {
+      "IPYTHONDIR" = "${config.xdg.configHome}/ipython";
+    };
   }; # ..home
 }
