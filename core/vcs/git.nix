@@ -110,6 +110,8 @@
       };
 
       # https://git-scm.com/docs/git-config
+      # ~/.config/git/config
+      # In sync with ~/Projects/systemn/system/base/vcs/git.nix
       settings = {
         init = {
           defaultBranch = lib.mkDefault "master";
