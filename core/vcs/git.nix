@@ -23,6 +23,9 @@
         "*~"
         "*.swp"
 
+        # Backups
+        "*.bak"
+
         # Outputs
         # Rust
         "/target/"
