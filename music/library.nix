@@ -62,6 +62,7 @@
           "scrub"
           "convert"
           "mbcollection"
+          "bandcamp"
           "lastgenre"
           "random"
           # "artistcountry"
@@ -70,6 +71,12 @@
         # Plugins
         # -------
 
+        # https://github.com/snejus/beetcamp
+        bandcamp = {
+          lyrics = true;
+          art = true;
+          data_source_mismatch_penalty = 0.1;
+        };
         # Echonest
         echonest.auto = true;
 
@@ -108,6 +115,8 @@
       cuetools
       ffmpeg
       flac
+
+      python313Packages.beetcamp
     ];
   }; # ..home
 }
