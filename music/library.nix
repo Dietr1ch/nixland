@@ -1,4 +1,9 @@
-{ pkgs, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 {
   programs = {
@@ -6,6 +11,13 @@
     # https://github.com/nix-community/home-manager/blob/master/modules/programs/beets.nix
     beets = {
       enable = true;
+
+      mpdIntegration = {
+        host = lib.mkDefault "localhost";
+        port = lib.mkDefault config.services.mpd.network.port;
+        enableUpdate = true;
+        enableStats = true;
+      };
 
       # ~/.config/beets/config.yaml
       settings = {
@@ -51,7 +63,6 @@
           "convert"
           "mbcollection"
           "lastgenre"
-          "mpdstats"
           "random"
           # "artistcountry"
         ];
