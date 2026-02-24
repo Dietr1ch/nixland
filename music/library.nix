@@ -66,6 +66,9 @@
           "lastgenre"
           "random"
           # "artistcountry"
+
+          # https://docs.beets.io/en/latest/plugins/fish.html
+          "fish"
         ];
 
         # Plugins
