@@ -2,6 +2,8 @@
 
 {
   programs = {
+    # https://home-manager-options.extranix.com/?release=master&query=programs.beets
+    # https://github.com/nix-community/home-manager/blob/master/modules/programs/beets.nix
     beets = {
       enable = true;
 
@@ -32,6 +34,7 @@
 
         ui.color = true;
 
+        # https://docs.beets.io/en/latest/plugins/index.html
         plugins = [
           "bpd"
           "chroma"
@@ -71,7 +74,7 @@
         };
         mpdstats.rating_mix = 0.95;
 
-        # Convert
+        # Convert (https://docs.beets.io/en/latest/plugins/convert.html)
         convert = {
           copy_album_art = true;
           embed = true;
