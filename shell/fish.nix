@@ -31,7 +31,6 @@
 
       shellAbbrs = {
         cat = "bat -p";
-        f = "fd --follow";
 
         # rsync
         rs = ''
