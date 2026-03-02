@@ -10,10 +10,25 @@
 
       # ~/.config/fish/config.fish
       shellInit = ''
+        # Nixland's shellInit (~/Projects/nixland/shell/fish.nix)
         set --global HOSTNAME (hostname)
+
+        # Use the SSH socket from $ROAMING_SSH_HOSTNAME if usable
+        if test -n $ROAMING_SSH_HOSTNAME
+          set -l rs $XDG_RUNTIME_DIR/gnupg/S.gpg-agent.roaming.$ROAMING_SSH_HOSTNAME.ssh
+          if not test -S $rs
+            rm $rs
+          else
+            if not SSH_AUTH_SOCK=$rs ssh-add -L > /dev/null 2>&1
+              rm $rs
+            else
+              set -g SSH_AUTH_SOCK $rs
+            end
+          end
+        end
       '';
       loginShellInit = ''
-        # TODO: Set SSH_AUTH_SOCK as a global variable
+        # Nixland's loginShellInit (~/Projects/nixland/shell/fish.nix)
       '';
 
       # Themes:
