@@ -13,19 +13,7 @@
         # Nixland's shellInit (~/Projects/nixland/shell/fish.nix)
         set --global HOSTNAME (hostname)
 
-        # Use the SSH socket from $ROAMING_SSH_HOSTNAME if usable
-        if test -n $ROAMING_SSH_HOSTNAME
-          set -l rs $XDG_RUNTIME_DIR/gnupg/S.gpg-agent.roaming.$ROAMING_SSH_HOSTNAME.ssh
-          if not test -S $rs
-            rm $rs
-          else
-            if not SSH_AUTH_SOCK=$rs ssh-add -L > /dev/null 2>&1
-              rm $rs
-            else
-              set -g SSH_AUTH_SOCK $rs
-            end
-          end
-        end
+        ,set_roaming_ssh_socket
       '';
       loginShellInit = ''
         # Nixland's loginShellInit (~/Projects/nixland/shell/fish.nix)
@@ -193,6 +181,30 @@
           '';
         };
 
+        ",set_roaming_ssh_socket" = {
+          body = ''
+            if test -n "$ROAMING_SSH_HOSTNAME"
+              # Use the SSH socket from $ROAMING_SSH_HOSTNAME if usable
+              set -l rs $XDG_RUNTIME_DIR/gnupg/S.gpg-agent.roaming.$ROAMING_SSH_HOSTNAME.ssh
+              if not test -e $rs
+                echo "SSH client exported ROAMING_SSH_HOSTNAME, but did not forward the GNUPG SSH socket $XDG_RUNTIME_DIR/gnupg/S.gpg-agent.roaming.$ROAMING_SSH_HOSTNAME.ssh" >&2
+                return
+              end
+              if not test -S $rs
+                echo "GNUPG SSH socket exported by $ROAMING_SSH_HOSTNAME seems broken" >&2
+                rm $rs
+                return
+              end
+              if not SSH_AUTH_SOCK=$rs ssh-add -L > /dev/null 2>&1
+                echo "GNUPG SSH socket exported by $ROAMING_SSH_HOSTNAME has no keys" >&2
+                rm $rs
+                return
+              end
+
+              set -g SSH_AUTH_SOCK $rs
+            end
+          '';
+        };
         ",system_logs" = {
           body = ''
             sudo --validate && sudo journalctl --no-hostname --boot '0' --follow $argv | lnav
