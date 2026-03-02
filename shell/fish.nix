@@ -17,6 +17,20 @@
       '';
       loginShellInit = ''
         # Nixland's loginShellInit (~/Projects/nixland/shell/fish.nix)
+
+        # Use the SSH socket from $ROAMING_SSH_HOSTNAME if usable
+        if test -n $ROAMING_SSH_HOSTNAME
+          set -l rs $XDG_RUNTIME_DIR/gnupg/S.gpg-agent.roaming.$ROAMING_SSH_HOSTNAME.ssh
+          if not test -S $rs
+            rm $rs
+          else
+            if not SSH_AUTH_SOCK=$rs ssh-add -L > /dev/null 2>&1
+              rm $rs
+            else
+              set -g SSH_AUTH_SOCK=$rs
+            end
+          end
+        end
       '';
 
       # Themes:
