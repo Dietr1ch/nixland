@@ -8,8 +8,13 @@
       # ~/Projects/home-manager/modules/programs/fish.nix
       enable = true;
 
-      shellInit = "";
-      loginShellInit = "";
+      # ~/.config/fish/config.fish
+      shellInit = ''
+        set --global HOSTNAME (hostname)
+      '';
+      loginShellInit = ''
+        # TODO: Set SSH_AUTH_SOCK as a global variable
+      '';
 
       # Themes:
       #   fish_config theme show
