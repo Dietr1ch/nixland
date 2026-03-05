@@ -5,6 +5,7 @@
     # Packages in sync with ~/Projects/systemn/desktop/programming/web.nix
     packages = with pkgs; [
       static-web-server
+      closurecompiler
 
       emmet-ls
       htmx-lsp2
