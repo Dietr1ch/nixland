@@ -33,6 +33,7 @@
   };
 
   home = {
+    # In sync with ~/Projects/systemn/desktop/shell/graphical/fonts.nix
     packages = with pkgs; [
       # Regular fonts
       # =============
@@ -40,6 +41,7 @@
       inconsolata
       liberation_ttf
       noto-fonts
+      open-sans
 
       # Programming
       # ===========
