@@ -188,6 +188,8 @@
       # jq
       # jqp
       xq
+      ## HTML
+      htmlq
 
       ## Viewers
       hexyl
