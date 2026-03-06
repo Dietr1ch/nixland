@@ -93,7 +93,6 @@
       # fileWidgetOptions = [];
     }; # ..programs.skim
 
-
     # JSON
     jq = {
       enable = true;
@@ -181,7 +180,13 @@
 
   home = {
     packages = with pkgs; [
+      # Data
+      ## Text
       gawk
+      ## JSON
+      # jq
+      # jqp
+      xq
 
       ## Viewers
       hexyl
