@@ -183,6 +183,7 @@
       # Data
       ## Text
       gawk
+      sd # sed replacement
       ## JSON
       # jq
       # jqp
@@ -197,9 +198,6 @@
       libnotify
       inotify-tools
       fswatch
-
-      # Text
-      sd # sed replacement
 
       # System
       htop
