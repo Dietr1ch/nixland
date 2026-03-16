@@ -11,6 +11,7 @@
     ./passwords.nix
     ./ssh.nix
     ./tracing.nix
+    # ./updates.nix
   ];
 
   # https://home-manager-options.extranix.com/?release=master&query=xdg
