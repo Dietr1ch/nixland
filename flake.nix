@@ -63,6 +63,7 @@
           programming = import ./programming; # ./programming/default.nix
           programming-c = import ./programming/c.nix;
           programming-cpp = import ./programming/cpp.nix;
+          programming-fish = import ./programming/fish.nix;
           programming-haskell = import ./programming/haskell.nix;
           programming-python = import ./programming/python.nix;
           programming-rust = import ./programming/rust.nix;
