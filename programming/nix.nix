@@ -4,6 +4,8 @@
   home = {
     # Packages in sync with ~/Projects/systemn/desktop/programming/nix.nix
     packages = with pkgs; [
+      devenv
+
       # LSP
       nixd
 
