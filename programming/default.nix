@@ -17,6 +17,7 @@
     ./nix.nix
 
     ./build.nix
+    ./databases.nix
     ./debugging.nix
     ./devenv.nix
 
