@@ -1,4 +1,9 @@
-{ pkgs, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 {
   home = {
@@ -7,5 +12,22 @@
       revolt-desktop
       vesktop
     ];
-  };
+  }; # ..home
+
+  services = {
+    # https://home-manager-options.extranix.com/?release=master&query=mpd-discord-rpc
+    mpd-discord-rpc = {
+      enable = lib.mkDefault config.services.mpd.enable;
+
+      settings = {
+        hosts = [
+          "localhost:${toString config.services.mpd.network.port}"
+        ];
+        format = {
+          details = "$title";
+          state = "On $album by $artist";
+        };
+      };
+    }; # ..services.mpd-discord-rpc
+  }; # ..services
 }
