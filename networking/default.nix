@@ -19,7 +19,7 @@
       aria2
       rustscan
 
-      wireshark-qt
+      wireshark
       xh # HTTPie clone
     ];
   };
