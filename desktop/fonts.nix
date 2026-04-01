@@ -10,17 +10,19 @@
         # How to check font-family:
         # find /nix/var/nix/profiles/system/sw/share/X11/fonts/ -type l | sk --preview 'fc-query {} | grep "^\\s\\+family:" | grep "^\\s\\+family:" | cut -d\'"\' -f2'
         serif = [
+          "Noto Serif"
           "DejaVu Serif"
           "Liberation Serif"
         ];
         sansSerif = [
+          "Noto Sans"
+          "Fira Sans"
           "DejaVu Sans"
           "Liberation Sans"
         ];
         monospace = [
-          "FiraCode"
+          "Fira Code"
           "Source Code Pro for Powerline"
-          "Hack"
         ];
         emoji = [
           "Noto Color Emoji"
@@ -58,10 +60,6 @@
       roboto-mono
       roboto-serif
       roboto-flex
-
-      # Hack
-      # hack-font
-      # hackgen-nf-font
 
       # SourceCode
       source-code-pro
