@@ -37,6 +37,10 @@
     packages = with pkgs; [
       # Tools
       tokei
+
+      # Generic LSPs
+      textlsp
+      ltex-ls-plus
     ];
 
     file = {
