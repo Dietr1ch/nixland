@@ -13,12 +13,17 @@
     ncmpcpp = {
       enable = true;
 
+      mpdMusicDir = config.services.mpd.musicDirectory;
+
       # ~/.config/ncmpcpp/config
       # Default config: https://github.com/ncmpcpp/ncmpcpp/blob/master/doc/config
       settings = {
         media_library_primary_tag = "album_artist";
         follow_now_playing_lyrics = "yes";
         enable_window_title = "no";
+
+        # mpd_music_dir = config.services.mpd.musicDirectory;
+        lyrics_directory = "${config.services.mpd.musicDirectory}/.lyrics/";
       };
 
       # ~/.config/ncmpcpp/bindings
@@ -104,6 +109,9 @@
     # ~/Projects/nixpkgs/pkgs/servers/mpd/default.nix
     mpd = {
       enable = true;
+
+      musicDirectory = "~/Music";
+      playlistDirectory = "${config.xdg.configHome}/mpd/playlists";
 
       network = {
         listenAddress = "any";
