@@ -9,7 +9,6 @@
     ./terminal # ./terminal/default.nix
     # ./video # ./video/default.nix
 
-    ./databases.nix
     ./documentation.nix
     # ./documents.nix
     ./fonts.nix
