@@ -62,6 +62,7 @@
 
           programming = import ./programming; # ./programming/default.nix
           programming-c = import ./programming/c.nix;
+          programming-config = import ./programming/config; # ./programming/config/default.nix
           programming-cpp = import ./programming/cpp.nix;
           programming-fish = import ./programming/fish.nix;
           programming-haskell = import ./programming/haskell.nix;

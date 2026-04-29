@@ -2,6 +2,8 @@
 
 {
   imports = [
+    ./config
+
     # ./c.nix
     # ./cpp.nix
     # ./fish.nix
@@ -27,9 +29,6 @@
     ./grammars.nix
 
     ./shell.nix
-
-    ./json.nix
-    ./xml.nix
   ];
 
   programs = {

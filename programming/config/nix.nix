@@ -2,6 +2,7 @@
 
 {
   home = {
+    # Packages in sync with ~/Projects/systemn/desktop/programming/config/nix.nix
     packages = with pkgs; [
       # Formatting
       nixpkgs-fmt
@@ -11,11 +12,4 @@
     ]; # ..home.packages
   }; # ..home
 
-  programs = {
-    jq = {
-      # ~/Projects/home-manager/modules/programs/jq.nix
-      # https://github.com/jqlang/jq
-      enable = true;
-    };
-  };
 }
