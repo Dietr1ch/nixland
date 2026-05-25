@@ -68,9 +68,6 @@
           # HTTP
           requests
 
-          # AI
-          anthropic
-
           # Data
           pyarrow
           pydantic
@@ -83,6 +80,12 @@
 
           # Solvers
           z3-solver
+
+          # Misc
+          ## AI
+          anthropic
+          ## Beets
+          beetcamp
         ]
       ))
 
