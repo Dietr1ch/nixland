@@ -18,6 +18,8 @@
       # ~/.config/ncmpcpp/config
       # Default config: https://github.com/ncmpcpp/ncmpcpp/blob/master/doc/config
       settings = {
+        allow_for_physical_item_deletion = "no";
+
         media_library_primary_tag = "album_artist";
         follow_now_playing_lyrics = "yes";
         enable_window_title = "no";
