@@ -16,6 +16,7 @@
       mpdMusicDir = config.services.mpd.musicDirectory;
 
       # ~/.config/ncmpcpp/config
+      # man ncmpcpp(1)
       # Default config: https://github.com/ncmpcpp/ncmpcpp/blob/master/doc/config
       settings = {
         allow_for_physical_item_deletion = "no";
