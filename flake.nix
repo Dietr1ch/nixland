@@ -65,6 +65,7 @@
           programming-config = import ./programming/config; # ./programming/config/default.nix
           programming-cpp = import ./programming/cpp.nix;
           programming-fish = import ./programming/fish.nix;
+          programming-go = import ./programming/go.nix;
           programming-haskell = import ./programming/haskell.nix;
           programming-python = import ./programming/python.nix;
           programming-rust = import ./programming/rust.nix;
