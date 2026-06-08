@@ -131,6 +131,11 @@
             pushInsteadOf = lib.mkDefault "cb:";
           };
 
+          # GitDot
+          "https://gitdot.io/" = {
+            insteadOf = lib.mkDefault "gd:";
+          };
+
           # GitHub
           "https://github.com/" = {
             insteadOf = lib.mkDefault "gh:";
