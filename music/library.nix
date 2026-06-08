@@ -82,6 +82,15 @@
           art = true;
           data_source_mismatch_penalty = 0.1;
         };
+        # https://docs.beets.io/en/latest/plugins/musicbrainz.html
+        musicbrainz = {
+          data_source_mismatch_penalty = 0.3;
+        };
+        # https://docs.beets.io/en/latest/plugins/discogs.html
+        discogs = {
+          data_source_mismatch_penalty = 0.8;
+        };
+
         # Echonest
         echonest.auto = true;
 
