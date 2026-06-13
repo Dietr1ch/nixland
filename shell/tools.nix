@@ -219,6 +219,6 @@
       # System
       # ------
       nix-tree
-    ];
-  };
+    ]; # ..home.packages
+  }; # ..home
 }
