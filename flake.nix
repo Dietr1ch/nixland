@@ -51,6 +51,7 @@
           desktop-video = import ./desktop/video/default.nix;
 
           gaming = import ./gaming; # ./gaming/default.nix
+          gaming-chess = import ./gaming/chess.nix;
           gaming-comms = import ./gaming/comms.nix;
           gaming-emulators = import ./gaming/emulators.nix;
 

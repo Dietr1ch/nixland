@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./chess.nix
+    # ./chess.nix
     # ./comms.nix
     # ./emulators.nix
     ./mangohud.nix
