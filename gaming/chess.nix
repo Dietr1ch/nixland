@@ -7,7 +7,7 @@
       stockfish
       uchess
       gnuchess
-      # BROKEN: en-croissant
+      en-croissant
       chessdb
     ];
   };
