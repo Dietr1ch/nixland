@@ -27,7 +27,7 @@
             if not SSH_AUTH_SOCK=$rs ssh-add -L > /dev/null 2>&1
               rm $rs
             else
-              set -g SSH_AUTH_SOCK=$rs
+              set -g SSH_AUTH_SOCK $rs
             end
           end
         end
