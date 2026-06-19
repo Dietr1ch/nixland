@@ -5,6 +5,7 @@
     # https://home-manager-options.extranix.com/?release=master&query=programs.parallel
     parallel = {
       enable = true;
+      package = pkgs.parallel;
       will-cite = true;
     };
 
