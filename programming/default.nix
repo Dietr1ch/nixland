@@ -4,6 +4,7 @@
   imports = [
     ./config
 
+    # ./asp.nix
     # ./c.nix
     # ./cpp.nix
     # ./fish.nix
@@ -12,8 +13,6 @@
     # ./rust.nix
     # ./web.nix
     # ./zig.nix
-
-    ./asp.nix
 
     ./nix.nix
 
