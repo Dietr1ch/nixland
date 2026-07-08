@@ -39,11 +39,7 @@
   }; # ..programs
 
   home = {
-    # Packages in sync with ~/Projects/systemn/desktop/programming/default.nix
     packages = with pkgs; [
-      # Tools
-      tokei
-
       # Generic LSPs
       textlsp
       ltex-ls-plus

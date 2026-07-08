@@ -180,6 +180,8 @@
 
   home = {
     packages = with pkgs; [
+      tokei
+
       # Data
       ## Text
       gawk
