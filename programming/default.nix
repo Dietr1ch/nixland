@@ -10,7 +10,6 @@
     # ./haskell.nix
     # ./python.nix
     # ./rust.nix
-    # ./sql.nix
     # ./web.nix
     # ./zig.nix
 
@@ -37,7 +36,6 @@
       enable = true;
 
       enableMcpIntegration = true;
-
     }; # ..programs.opencode
   }; # ..programs
 
