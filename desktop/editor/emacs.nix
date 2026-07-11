@@ -59,6 +59,10 @@
       services = {
         emacs = {
           Service = {
+            # Restart even on successful exits.
+            # This makes updating and restarting easier
+            Restart = lib.mkForce "always";
+
             # Allow long startups due to recompilation.
             TimeoutStartSec = 60;
 
