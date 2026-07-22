@@ -113,6 +113,7 @@
       };
 
       # https://git-scm.com/docs/git-config
+      # man git-config
       # ~/.config/git/config
       # In sync with ~/Projects/systemn/system/base/vcs/git.nix
       settings = {
@@ -122,6 +123,19 @@
         core = {
           whitespace = "trailing-space,space-before-tab";
         };
+        http = {
+          # Increase default buffer and parallelism
+          maxRequests = lib.mkDefault 8;
+          postBuffer = lib.mkDefault (1 * 512 * 1024 * 1024); # 512 MiB
+
+          # Block remote action if avg speed is below 1KiB/s for 5 minutes.
+          lowSpeedLimit = lib.mkDefault (1 * 1024); # 1KiB/s
+          lowSpeedTime = lib.mkDefault (5 * 60); # 5min
+
+          maxRetries = lib.mkDefault 5;
+          retryAfter = lib.mkDefault 10;
+        };
+
         url = {
           # Codeberg
           "https://codeberg.org/" = {
