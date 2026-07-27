@@ -1,4 +1,9 @@
-{ pkgs, lib, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 
 {
   programs = {
@@ -120,6 +125,7 @@
         init = {
           defaultBranch = lib.mkDefault "master";
         };
+
         core = {
           whitespace = "trailing-space,space-before-tab";
         };
@@ -142,7 +148,11 @@
             insteadOf = lib.mkDefault "cb:";
           };
           "ssh://git@codeberg.org/" = {
-            pushInsteadOf = lib.mkDefault "cb:";
+            pushInsteadOf = lib.mkDefault [
+              "cb:"
+              "CB:"
+            ];
+            insteadOf = lib.mkDefault "CB:";
           };
 
           # GitDot
@@ -155,8 +165,13 @@
             insteadOf = lib.mkDefault "gh:";
           };
           "git@github.com:" = {
-            pushInsteadOf = lib.mkDefault "gh:";
+            pushInsteadOf = lib.mkDefault [
+              "gh:"
+              "GH:"
+            ];
+            insteadOf = lib.mkDefault "GH:";
           };
+          # GitHub Gists
           "https://gist.github.com/" = {
             insteadOf = lib.mkDefault "gist:";
           };
@@ -169,7 +184,11 @@
             insteadOf = lib.mkDefault "gl:";
           };
           "git@gitlab.com:" = {
-            pushInsteadOf = lib.mkDefault "gl:";
+            pushInsteadOf = lib.mkDefault [
+              "gl:"
+              "GL:"
+            ];
+            insteadOf = lib.mkDefault "GL:";
           };
         };
         pretty = {
@@ -212,13 +231,16 @@
           "log-incidents" =
             lib.mkDefault "!git log --oneline --regexp-ignore-case --extended-regexp --grep 'revert|hotfix|emergency|rollback' --since='1 year ago'";
         };
-      };
-    };
-  };
+      }; # ..programs.git.settings
+    }; # ..programs.git
+  }; # ..programs
 
   home = {
     packages = with pkgs; [
+      gh
+
       delta
+
       git-absorb
       git-appraise # https://github.com/google/git-appraise
       git-bug # https://github.com/git-bug/git-bug
