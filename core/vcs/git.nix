@@ -129,6 +129,9 @@
         core = {
           whitespace = "trailing-space,space-before-tab";
         };
+        diff = {
+          colorMoved = "zebra";
+        };
         http = {
           # Increase default buffer and parallelism
           maxRequests = lib.mkDefault 8;
