@@ -13,6 +13,16 @@
           vterm
         ];
     }; # ..programs.emacs
+
+    git = {
+      settings = {
+        mergetool = {
+          "ediff" = {
+            cmd = "emacsclient --eval '(ediff-merge-files-with-ancestor \"$LOCAL\" \"$REMOTE\" \"$BASE\" nil \"$MERGED\")'";
+          }; # ..programs.git.settings.mergetool.ediff
+        }; # ..programs.git.settings.mergetool
+      }; # ..programs.git.settings
+    }; # ..programs.git
   }; # ..programs
 
   home = {
