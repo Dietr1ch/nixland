@@ -19,12 +19,14 @@
     ./build.nix
     ./databases.nix
     ./debugging.nix
+    ./formatting.nix
+    ./grammars.nix
+
     ./devenv.nix
 
     ./rpc.nix
 
     ./constraint.nix
-    ./grammars.nix
 
     ./shell.nix
   ];
