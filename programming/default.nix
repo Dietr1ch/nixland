@@ -42,6 +42,8 @@
 
   home = {
     packages = with pkgs; [
+      ast-grep
+
       # Generic LSPs
       textlsp
       ltex-ls-plus
