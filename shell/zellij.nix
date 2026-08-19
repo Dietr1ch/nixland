@@ -104,6 +104,8 @@ in
 
             // Session
             bind "Ctrl q" { Detach; }
+            // TODO: Add RenameSession command (https://github.com/zellij-org/zellij/issues/3626)
+            // bind "Ctrl Alt R" { SwitchToMode "RenameSession"; SessionNameInput 0; }
             bind "Alt s" {
               LaunchOrFocusPlugin "session-manager" {
                 floating true
