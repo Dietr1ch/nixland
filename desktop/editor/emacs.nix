@@ -41,9 +41,8 @@
     # https://discourse.doomemacs.org/t/using-lsp-use-plists-with-rust-analyzer-stops-updating-diagnostics-on-save/2832
     sessionVariables = {
       "LSP_USE_PLISTS" = "true";
-      "VISUAL" = lib.mkDefault "emacsclient --create-frame --quiet";
-      "EDITOR" =
-        lib.mkDefault "emacsclient --create-frame --quiet --no-window-system --alternate-editor hx";
+      "VISUAL" = lib.mkDefault "emacsclient --quiet";
+      "EDITOR" = lib.mkDefault "emacsclient --quiet --no-window-system --alternate-editor hx";
     };
   }; # ..home
 
