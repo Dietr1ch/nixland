@@ -13,7 +13,7 @@
         obs-backgroundremoval
         obs-gstreamer
         obs-pipewire-audio-capture
-        obs-source-switcher
+        # BROKEN: obs-source-switcher
         obs-vaapi # optional AMD hardware acceleration
         obs-vkcapture
         wlrobs
