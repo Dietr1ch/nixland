@@ -47,6 +47,8 @@
       # Generic LSPs
       textlsp
       ltex-ls-plus
+
+      snip
     ];
 
     file = {
