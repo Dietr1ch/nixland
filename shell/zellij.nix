@@ -362,14 +362,14 @@ in
 
       ".config/zellij/plugins/sessionizer.wasm".source = pkgs.fetchurl {
         # https://github.com/laperlej/zellij-sessionizer/releases
-        url = "https://github.com/laperlej/zellij-sessionizer/releases/download/v0.4.3/zellij-sessionizer.wasm"; # Latest as of 2025-09-10
-        sha256 = "sha256-AGuWbuRX7Yi9tPdZTzDKULXh3XLUs4navuieCimUgzQ=";
+        url = "https://github.com/laperlej/zellij-sessionizer/releases/download/v0.5.0/zellij-sessionizer.wasm"; # Latest as of 2026-09-04
+        sha256 = "sha256-xBhBwCPnToH5mg/Y2V4FBO0gLfLNuSYE31HJ5OoLoFs=";
       };
 
       # ".config/zellij/plugins/forgot.wasm".source = pkgs.fetchurl {
       #   # https://github.com/karimould/zellij-forgot/releases
-      #   url = "https://github.com/karimould/zellij-forgot/releases/download/0.4.0/zellij_forgot.wasm";
-      #   sha256 = "sha256-WdPKHrCtmg0dv446f8KkHNnAk/GKXtufJfCZyLXf7cM=";
+      #   url = "https://github.com/karimould/zellij-forgot/releases/download/0.4.2/zellij_forgot.wasm"; # Latest as of 2026-09-04
+      #   sha256 = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=";
       # };
     }; # ..home.file
   }; # ..home
