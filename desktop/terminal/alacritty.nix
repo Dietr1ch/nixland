@@ -25,7 +25,7 @@
           # multiplier = 10;
         };
         font = {
-          # Should match Emacs' ~/.config/emacs/spacemacs-dev/config/init.el
+          # Should match Emacs' ~/.config/spacemacs/config/init.el
           size = lib.mkDefault 11.0;
           normal.family = lib.mkDefault "Fira Code";
           bold.family = lib.mkDefault "Fira Code";
