@@ -43,6 +43,9 @@ in
 
         scroll_buffer_size = 10000;
         scrollback_lines_to_serialize = 10000;
+
+        # Nested Sessions (https://zellij.dev/documentation/nested-sessions.html)
+        nested_session_handling = "never";
       }; # ..programs.zellij.settings
 
       # New settings from https://github.com/nix-community/home-manager/pull/6078
@@ -102,7 +105,14 @@ in
           shared_except "locked" {
             bind "Alt $" { SwitchToMode "Locked"; }
 
-            // Session
+            // Plugins
+            bind "Alt f" {
+                LaunchOrFocusPlugin "zellij:strider" {
+                    floating true
+                }
+            }
+
+            // Sessions
             bind "Ctrl q" { Detach; }
             // TODO: Add RenameSession command (https://github.com/zellij-org/zellij/issues/3626)
             // bind "Ctrl Alt R" { SwitchToMode "RenameSession"; SessionNameInput 0; }
@@ -125,13 +135,9 @@ in
             //   LaunchOrFocusPlugin "forgot" {
             //   };
             // }
-
-            // Plugins
-            bind "Alt f" {
-                LaunchOrFocusPlugin "zellij:strider" {
-                    floating true
-                }
-            }
+            // Sessions - Descend / Ascend
+            bind "Alt Shift s" { FocusGuestSession; }
+            bind "Alt Ctrl Shift s" { FocusHostSession; }
 
             // Tabs
             /// Tab control
