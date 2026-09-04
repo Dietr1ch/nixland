@@ -70,7 +70,7 @@ in
 
           // Extra plugins (https://github.com/zellij-org/awesome-zellij)
           sessionizer location="file:///home/dietr1ch/.config/zellij/plugins/sessionizer.wasm"
-          forgot location="file:///home/dietr1ch/.config/zellij/plugins/forgot.wasm"
+          // forgot location="file:///home/dietr1ch/.config/zellij/plugins/forgot.wasm"
         }
 
         // Plugins to load in the background when a new session starts
@@ -111,11 +111,11 @@ in
                     floating true
                 }
             }
-            bind "Alt Shift /" {
-              LaunchOrFocusPlugin "forgot" {
-                floating true
-              };
-            }
+            // bind "Alt Shift /" {
+            //   LaunchOrFocusPlugin "forgot" {
+            //     floating true
+            //   };
+            // }
 
             // Sessions
             bind "Ctrl q" { Detach; }
@@ -367,11 +367,11 @@ in
         sha256 = "sha256-xBhBwCPnToH5mg/Y2V4FBO0gLfLNuSYE31HJ5OoLoFs=";
       };
 
-      ".config/zellij/plugins/forgot.wasm".source = pkgs.fetchurl {
-        # https://github.com/karimould/zellij-forgot/releases
-        url = "https://github.com/karimould/zellij-forgot/releases/download/0.4.2/zellij_forgot.wasm"; # Latest as of 2026-09-04
-        sha256 = "sha256-MRlBRVGdvcEoaFtFb5cDdDePoZ/J2nQvvkoyG6zkSds=";
-      };
+      # ".config/zellij/plugins/forgot.wasm".source = pkgs.fetchurl {
+      #   # https://github.com/karimould/zellij-forgot/releases
+      #   url = "https://github.com/karimould/zellij-forgot/releases/download/0.4.2/zellij_forgot.wasm"; # Latest as of 2026-09-04
+      #   sha256 = "sha256-MRlBRVGdvcEoaFtFb5cDdDePoZ/J2nQvvkoyG6zkSds=";
+      # };
     }; # ..home.file
   }; # ..home
 }
