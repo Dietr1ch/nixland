@@ -71,6 +71,8 @@
 
         shell = import ./shell; # ./shell/default.nix
         shell-history-atuin = import ./shell/history/atuin.nix;
+
+        services-activity_watch = import ./services/activity_watch.nix;
       };
   };
 }
