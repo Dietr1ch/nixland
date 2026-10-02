@@ -21,63 +21,56 @@
     };
   };
 
-  outputs =
-    {
-      nixpkgs,
-      ...
-    }:
-    {
-      nix.nixPath = [
-        "nixpkgs=${nixpkgs}"
-      ];
+  outputs = { nixpkgs, ... }: {
+    nix.nixPath = [ "nixpkgs=${nixpkgs}" ];
 
-      nixosModules =
-        let
-          import = path: path; # let the module system know what we are exporting
-        in
-        {
-          core = import ./core; # ./core/default.nix
-          core-vcs-jj = import ./core/vcs/jj.nix;
-          core-updates = import ./core; # ./core/updates.nix
+    nixosModules =
+      let
+        import = path: path; # let the module system know what we are exporting
+      in
+      {
+        core = import ./core; # ./core/default.nix
+        core-vcs-jj = import ./core/vcs/jj.nix;
+        core-updates = import ./core; # ./core/updates.nix
 
-          desktop = import ./desktop; # ./desktop/default.nix
-          desktop-browser = import ./desktop/browser/default.nix;
-          desktop-browser-chromium = import ./desktop/browser/chromium.nix;
-          desktop-browser-librewolf = import ./desktop/browser/librewolf.nix;
-          desktop-browser-misc = import ./desktop/browser/misc.nix;
-          desktop-browser-qutebrowser = import ./desktop/browser/qutebrowser.nix;
-          desktop-documents = import ./desktop/documents.nix;
-          desktop-editor-emacs-chemacs = import ./desktop/editor/emacs-chemacs.nix;
-          desktop-hyprland = import ./desktop/hyprland.nix;
-          desktop-video = import ./desktop/video/default.nix;
+        desktop = import ./desktop; # ./desktop/default.nix
+        desktop-browser = import ./desktop/browser/default.nix;
+        desktop-browser-chromium = import ./desktop/browser/chromium.nix;
+        desktop-browser-librewolf = import ./desktop/browser/librewolf.nix;
+        desktop-browser-misc = import ./desktop/browser/misc.nix;
+        desktop-browser-qutebrowser = import ./desktop/browser/qutebrowser.nix;
+        desktop-documents = import ./desktop/documents.nix;
+        desktop-editor-emacs-chemacs = import ./desktop/editor/emacs-chemacs.nix;
+        desktop-hyprland = import ./desktop/hyprland.nix;
+        desktop-video = import ./desktop/video/default.nix;
 
-          gaming = import ./gaming; # ./gaming/default.nix
-          gaming-chess = import ./gaming/chess.nix;
-          gaming-comms = import ./gaming/comms.nix;
-          gaming-emulators = import ./gaming/emulators.nix;
+        gaming = import ./gaming; # ./gaming/default.nix
+        gaming-chess = import ./gaming/chess.nix;
+        gaming-comms = import ./gaming/comms.nix;
+        gaming-emulators = import ./gaming/emulators.nix;
 
-          music = import ./music; # ./music/default.nix
-          music-cd = import ./music/cd.nix;
-          music-guitar = import ./music/guitar.nix;
+        music = import ./music; # ./music/default.nix
+        music-cd = import ./music/cd.nix;
+        music-guitar = import ./music/guitar.nix;
 
-          networking = import ./networking; # ./networking/default.nix
+        networking = import ./networking; # ./networking/default.nix
 
-          programming = import ./programming; # ./programming/default.nix
-          programming-asp = import ./programming/asp.nix;
-          programming-c = import ./programming/c.nix;
-          programming-config = import ./programming/config; # ./programming/config/default.nix
-          programming-cpp = import ./programming/cpp.nix;
-          programming-fish = import ./programming/fish.nix;
-          programming-go = import ./programming/go.nix;
-          programming-haskell = import ./programming/haskell.nix;
-          programming-python = import ./programming/python.nix;
-          programming-rust = import ./programming/rust.nix;
-          programming-sql = import ./programming/sql.nix;
-          programming-web = import ./programming/web.nix;
-          programming-zig = import ./programming/zig.nix;
+        programming = import ./programming; # ./programming/default.nix
+        programming-asp = import ./programming/asp.nix;
+        programming-c = import ./programming/c.nix;
+        programming-config = import ./programming/config; # ./programming/config/default.nix
+        programming-cpp = import ./programming/cpp.nix;
+        programming-fish = import ./programming/fish.nix;
+        programming-go = import ./programming/go.nix;
+        programming-haskell = import ./programming/haskell.nix;
+        programming-python = import ./programming/python.nix;
+        programming-rust = import ./programming/rust.nix;
+        programming-sql = import ./programming/sql.nix;
+        programming-web = import ./programming/web.nix;
+        programming-zig = import ./programming/zig.nix;
 
-          shell = import ./shell; # ./shell/default.nix
-          shell-history-atuin = import ./shell/history/atuin.nix;
-        };
-    };
+        shell = import ./shell; # ./shell/default.nix
+        shell-history-atuin = import ./shell/history/atuin.nix;
+      };
+  };
 }
