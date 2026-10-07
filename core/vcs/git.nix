@@ -112,6 +112,17 @@
         enable = true;
       };
 
+      maintenance = {
+        enable = true;
+      };
+
+      includes = [
+        {
+          # ~/.config/git/maintenance.local
+          path = "maintenance.local";
+        }
+      ];
+
       # https://git-scm.com/docs/git-config
       # man git-config
       # ~/.config/git/config

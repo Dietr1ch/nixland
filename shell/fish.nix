@@ -146,6 +146,9 @@
 
         gm = "git merge";
 
+        gMr = "git maintenance register --config-file $XDG_CONFIG_HOME/git/maintenance.local";
+        gMu = "git maintenance unregister --config-file $XDG_CONFIG_HOME/git/maintenance.local";
+
         # systemd
         # -------
         sc = "systemctl";
