@@ -140,8 +140,13 @@
     mpdris2 = {
       enable = true;
 
-      multimediaKeys = true;
-      notifications = true;
+      # https://github.com/eonpatapon/mpDris2/blob/master/src/mpDris2.conf
+      settings = {
+        Bling = {
+          mmkeys = "True";
+          notify = "True";
+        };
+      };
     }; # ..services.mpdris2
   }; # ..services
 
