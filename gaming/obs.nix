@@ -9,7 +9,7 @@
       plugins = with pkgs.obs-studio-plugins; [
         # BROKEN: distroav # NDI-6 is broken
         input-overlay
-        obs-advanced-masks
+        # BROKEN: obs-advanced-masks
         obs-backgroundremoval
         obs-gstreamer
         obs-pipewire-audio-capture
