@@ -6,7 +6,7 @@
     # ./comms.nix
     # ./emulators.nix
     ./mangohud.nix
-    ./obs.nix
+    # ./obs.nix
     ./sdl.nix
   ];
 

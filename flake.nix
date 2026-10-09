@@ -48,6 +48,7 @@
         gaming-chess = import ./gaming/chess.nix;
         gaming-comms = import ./gaming/comms.nix;
         gaming-emulators = import ./gaming/emulators.nix;
+        gaming-obs = import ./gaming/obs.nix;
 
         music = import ./music; # ./music/default.nix
         music-cd = import ./music/cd.nix;
