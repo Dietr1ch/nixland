@@ -1,10 +1,12 @@
-{ lib, ... }:
+{ pkgs, lib, ... }:
 
 {
   programs = {
     helix = {
       # https://rycee.gitlab.io/home-manager/options.html#opt-programs.helix.enable
       enable = true;
+
+      package = pkgs.steelix;
 
       # Generates ~/.config/helix/config.toml
       settings = {
@@ -87,8 +89,13 @@
   }; # ..programs
 
   home = {
+    packages = with pkgs; [
+      steel
+      # NOTE: steel includes steel-language-server (but shouldn't?)
+    ]; # ..home.packages
+
     sessionVariables = {
       "ALTERNATE_EDITOR" = lib.mkDefault "hx";
-    };
-  };
+    }; # ..home.sessionVariables
+  }; # ..home
 }
