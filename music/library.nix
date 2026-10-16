@@ -130,7 +130,7 @@
       ffmpeg
       flac
 
-      python313Packages.beetcamp
+      python314Packages.beetcamp
     ];
   }; # ..home
 }

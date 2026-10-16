@@ -36,7 +36,7 @@
   home = {
     # Packages in sync with ~/Projects/systemn/desktop/programming/python.nix
     packages = with pkgs; [
-      (pkgs.python313.withPackages (
+      (pkgs.python314.withPackages (
         ppkgs: with ppkgs; [
           ipython
 
