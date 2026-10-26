@@ -9,6 +9,8 @@
       # ~/Projects/home-manager/modules/programs/fish.nix
       enable = true;
 
+      loadSessionVariables = true;
+
       # https://home-manager-options.extranix.com/?release=master&query=programs.nushell.shellAliases
       shellAliases = {
         # NOTE: ls aliases get in the way of using Nu
