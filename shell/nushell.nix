@@ -36,8 +36,6 @@
   }; # ..programs
 
   home = {
-    packages = with pkgs; [
-      nufmt
-    ];
+    packages = with pkgs; [ nufmt ];
   };
 }
