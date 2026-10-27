@@ -16,6 +16,7 @@
 
     ./nix.nix
 
+    ./agentic.nix
     ./build.nix
     ./databases.nix
     ./debugging.nix
@@ -31,15 +32,6 @@
     ./shell.nix
   ];
 
-  programs = {
-    # https://home-manager-options.extranix.com/?release=master&query=programs.opencode
-    opencode = {
-      enable = true;
-
-      enableMcpIntegration = true;
-    }; # ..programs.opencode
-  }; # ..programs
-
   home = {
     packages = with pkgs; [
       ast-grep
@@ -47,8 +39,6 @@
       # Generic LSPs
       textlsp
       ltex-ls-plus
-
-      snip
     ];
 
     file = {
