@@ -1,6 +1,7 @@
 { pkgs, lib, ... }:
 
 {
+  # Partially mirrors ~/Projects/systemn/desktop/shell/spelling.nix
   home = {
     sessionVariables = {
       DICTIONARY = lib.mkDefault "en_AU";
