@@ -13,6 +13,7 @@
     # ./documents.nix
     ./fonts.nix
     ./passwords.nix
+    ./spelling.nix
     ./sync.nix
     ./tools.nix
     ./yubikey.nix
