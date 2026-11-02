@@ -124,7 +124,7 @@
       ];
 
       # https://git-scm.com/docs/git-config
-      # man git-config
+      # man:git-config(1)
       # ~/.config/git/config
       # In sync with ~/Projects/systemn/system/base/vcs/git.nix
       settings = {
