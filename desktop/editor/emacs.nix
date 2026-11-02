@@ -6,6 +6,8 @@
     emacs = {
       enable = true;
 
+      # NOTE: `defaultEditor=true` sets $EDITOR and $VISUAL differently
+
       package = pkgs.emacs-pgtk;
       extraPackages =
         epkgs: with epkgs; [
@@ -47,8 +49,11 @@
   }; # ..home
 
   services = {
+    # https://home-manager-options.extranix.com/?release=master&query=services.emacs
     emacs = {
       enable = true;
+
+      startWithUserSession = lib.mkDefault "graphical"; # Wait for a graphical-session.target instead of default.target (on boot if lingering is enabled)
 
       client = {
         enable = true;
