@@ -31,6 +31,7 @@
       {
         core = import ./core; # ./core/default.nix
         core-vcs-jj = import ./core/vcs/jj.nix;
+        core-vcs-mergiraf = import ./core/vcs/mergiraf.nix;
         core-updates = import ./core; # ./core/updates.nix
 
         desktop = import ./desktop; # ./desktop/default.nix
