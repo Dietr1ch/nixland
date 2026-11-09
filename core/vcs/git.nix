@@ -153,9 +153,8 @@
 
           "exec" = "!exec ";
 
-          "h" = "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short";
-          "ll" = "log --graph --abbrev-commit --decorate --max-count 200";
-          "lla" = "log --graph --abbrev-commit --decorate --max-count 200 --all";
+          "ll" = "log --graph --abbrev-commit --decorate --boundary --max-count 100";
+          "lla" = "log --graph --abbrev-commit --decorate --boundary --max-count 100 --all";
 
           "publish" = "!sh -c 'git push -u origin $(git branch-name)'";
           "unpublish" = "!sh -c 'git push -u origin :$(git branch-name)'";

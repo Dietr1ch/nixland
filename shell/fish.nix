@@ -99,11 +99,9 @@
         gs = "git status";
         gst = "git stash";
 
-        gh = "git h";
         gls = "git ls";
         gll = "git ll";
         glla = "git lla";
-        gllA = "git llA";
 
         ge = "git exec";
 
