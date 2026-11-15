@@ -60,6 +60,10 @@
 
       includes = [
         {
+          # ~/.config/git/url.local
+          path = "url.local";
+        }
+        {
           # ~/.config/git/maintenance.local
           path = "maintenance.local";
         }
