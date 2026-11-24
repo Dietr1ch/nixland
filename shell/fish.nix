@@ -159,7 +159,19 @@
         sju = "journalctl --no-hostname --boot '0' --since '20 minutes ago' --user-unit";
 
         # Programs
-        ncdu = "dua interactive";
+        ns = ''
+          nix path-info \\
+          --size \\
+          --closure-size \\
+          --human-readable \\
+        '';
+        nS = ''
+          nix path-info \\
+          --recursive \\
+          --size \\
+          --closure-size \\
+          --human-readable \\
+        '';
       }; # ..programs.fish.shellAbbrs
 
       functions = {
