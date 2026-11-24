@@ -57,24 +57,24 @@
         # rsync
         rs = ''
           rsync \\
-            --archive \\
-            --recursive \\
-            --compress \\
-            --progress \\
-            --verbose \\
+          --archive \\
+          --recursive \\
+          --compress \\
+          --progress \\
+          --verbose \\
         '';
         rss = ''
           rsync \\
-            --archive \\
-            --recursive \\
-            --compress \\
-            --progress \\
-            --verbose \\
-            --exclude=.swp \\
-            --exclude=.direnv \\
-            --exclude=.direnv \\
-            --exclude=target \\
-            --exclude=result \\
+          --archive \\
+          --recursive \\
+          --compress \\
+          --progress \\
+          --verbose \\
+          --exclude=.swp \\
+          --exclude=.direnv \\
+          --exclude=.direnv \\
+          --exclude=target \\
+          --exclude=result \\
         '';
 
         o = "xdg-open";
