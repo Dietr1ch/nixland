@@ -30,6 +30,9 @@
       in
       {
         core = import ./core; # ./core/default.nix
+        core-vcs-clients-forgejo = import ./core/vcs/clients/forgejo.nix;
+        core-vcs-clients-github = import ./core/vcs/clients/github.nix;
+        core-vcs-clients-gitlab = import ./core/vcs/clients/gitlab.nix;
         core-vcs-jj = import ./core/vcs/jj.nix;
         core-vcs-mergiraf = import ./core/vcs/mergiraf.nix;
         core-updates = import ./core; # ./core/updates.nix
